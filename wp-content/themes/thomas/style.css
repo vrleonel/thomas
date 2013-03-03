@@ -1,3 +1,4 @@
+@charset "CP850";
 @import url("css/normalize.css");
 /*
 Theme Name: Thomas
@@ -25,6 +26,7 @@ textarea {
   color: #222; }
 
 body {
+  background: #adadad;
   font-size: 1em;
   line-height: 1.4; }
 
@@ -64,60 +66,59 @@ textarea {
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
+html, body, #main {
+  height: 100%; }
+
 body {
   font: 16px/26px Helvetica, Helvetica Neue, Arial; }
 
-.wrapper {
-  width: 90%;
-  margin: 0 5%; }
+body > #main {
+  height: auto;
+  min-height: 100%; }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-.header-container {
-  border-bottom: 20px solid #e44d26; }
+#container {
+  padding-bottom: 40px; }
 
-.footer-container,
-.main aside {
-  border-top: 20px solid #e44d26; }
+/* deve ser a mesma altura do rodapé */
+/*#wrapper {
+    min-height: 100%;
+    position: relative;
+}
 
-.header-container,
-.footer-container,
-.main aside {
-  background: #f16529; }
-
-.title {
-  color: white; }
-
+#container{
+  height:auto !important;
+  height:100%;
+  min-height:100%;
+}
+*/
 /* ==============
-    MOBILE: Menu
-   ============== */
+  MOBILE: Menu
+ ============== */
 nav ul {
   margin: 0;
   padding: 0; }
 
-nav a {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
-  background: #e44d26; }
+#navigator {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  background: #000;
+  /*position: relative;
+  margin-top: -80px;  A mesma altura do rodapé, o valor deve ser negativo 
+  height: 80px;
+  clear:both;*/ }
 
-nav a:hover,
-nav a:visited {
-  color: white; }
-
-nav a:hover {
-  text-decoration: underline; }
+#navigator li {
+  display: inline-block; }
 
 /* ==============
     MOBILE: Main
    ============== */
-.main {
-  padding: 30px 0; }
+#main {
+  padding: 30px 0;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%; }
 
 .main article h1 {
   font-size: 2em; }
@@ -146,13 +147,6 @@ nav a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  nav a {
-    float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
-    margin-bottom: 0; }
-
   nav li:first-child a {
     margin-left: 0; }
 
@@ -183,10 +177,6 @@ nav a:hover {
   .title {
     float: left; }
 
-  nav {
-    float: right;
-    width: 38%; }
-
   /* ============
       WIDE: Main
      ============ */
@@ -200,11 +190,7 @@ nav a:hover {
 @media only screen and (min-width: 1140px) {
   /* ===============
       Maximal Width
-     =============== */
-  .wrapper {
-    width: 1026px;
-    /* 1140px - 10% for margins */
-    margin: 0 auto; } }
+     =============== */ }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

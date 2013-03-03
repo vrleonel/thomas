@@ -55,24 +55,6 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-	<div id="header">
-	</div><!-- #header -->
-
-	<nav id="navigator">
-		<ul>
-			<li><a href="#tatoo">tatoo</a> </li>
-			<li><a href="#">art</a></li>
-			<li><a href="#">painting</a></li>
-			<li><a href="#">information</a></li>
-			<li><a href="#">blog/news</a></li>
-		</ul>
-		
-
-		<ul>
-			<li><a href="#">e-mail</a></li>
-			<li><a href="#">instagram</a> </li>
-			<li><a href="#">facebook</a></li>
-		</ul>
-	</nav>
-
+	
 	<div id="main">
+	<div id="header"></div><!-- #header -->
