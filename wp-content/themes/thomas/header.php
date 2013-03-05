@@ -55,6 +55,5 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-	
 	<div id="main">
-	<div id="header"></div><!-- #header -->
+	

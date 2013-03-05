@@ -16,10 +16,22 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import url("css/normalize.css");
 
+/* ==========================
+         Font face
+   ========================== */
+@font-face {
+    font-family: 'vevey';
+    src: url('font/vevey.eot');
+    src: url('font/vevey.eot?#iefix') format('embedded-opentype'),
+         url('font/vevey.woff') format('woff'),
+         url('font/vevey.ttf') format('truetype'),
+         url('font/vevey.svg#vevey') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-
 html,
 button,
 input,
@@ -32,16 +44,6 @@ body {
     background: #adadad;
     font-size: 1em;
     line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
 }
 
 hr {
@@ -74,18 +76,24 @@ textarea {
     padding: 0.2em 0;
 }
 
+h1{ 
+  font-family: "vevey"; 
+  font-size: 80px;
+}
+
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-html, body, #main {height:100%}
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px Helvetica, Helvetica Neue, Arial;
+    line-height: 26px;
 }
 
-
-body > #main {height: auto; min-height: 100%;}
-#container {padding-bottom: 40px;}  /* deve ser a mesma altura do rodapé */
+#main{
+  text-align: center;
+  color: #FFFFFF;
+}
 
 
 /*#wrapper {
@@ -109,8 +117,11 @@ nav ul {
 #navigator {
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   background: #000;
+  
+  padding: 20px;
+
   /*position: relative;
   margin-top: -80px;  A mesma altura do rodapé, o valor deve ser negativo 
   height: 80px;
@@ -118,49 +129,48 @@ nav ul {
 }
 #navigator li{
     display: inline-block;
+    font: 20px "vevey";
+    text-transform: uppercase; 
 } 
 
 
 nav a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 20px;
    
 }
 
 nav a:hover,
 nav a:visited {
+    color: #FFFFFF;
    
 }
 
 nav a:hover {
-   
+   color: #ff4900;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
 }
 
 /* ==============
     MOBILE: Main
    ============== */
-
+body{
+  background: url("img/bg.png") center center ;
+}
 #main {
-
-    padding: 30px 0;
-
-    height:auto !important;
-  height:100%;
-  min-height:100%;
+  
 }
-
-.main article h1 {
-    font-size: 2em;
+#content{
+  
 }
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
 /* ===============
     ALL: IE Fixes
    =============== */

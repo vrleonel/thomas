@@ -16,7 +16,9 @@
 get_header(); ?>
 
 <div id="container">
+	
 	<div id="content" role="main">
+		
 		<h1 class="logo">THOMAS HOOPER</h1>
 		
 		<h3>WELCOME</h3>
@@ -35,55 +37,6 @@ get_header(); ?>
 
 		<a href="#">READ MORE</a>
 
-				<p>
-			Oct. 13th — <br>
-			<strong>“Origins of Solitude” Exhibition</strong>
-		</p>
-		<p>
-			at Nepenthes New York
-			307 West 38th St. New York, NY 10018
-			212 643 9540
-		</p>
-
-		<a href="#">READ MORE</a>
-
-				<p>
-			Oct. 13th — <br>
-			<strong>“Origins of Solitude” Exhibition</strong>
-		</p>
-		<p>
-			at Nepenthes New York
-			307 West 38th St. New York, NY 10018
-			212 643 9540
-		</p>
-
-		<a href="#">READ MORE</a>
-
-
-				<p>
-			Oct. 13th — <br>
-			<strong>“Origins of Solitude” Exhibition</strong>
-		</p>
-		<p>
-			at Nepenthes New York
-			307 West 38th St. New York, NY 10018
-			212 643 9540
-		</p>
-
-		<a href="#">READ MORE</a>
-
-
-				<p>
-			Oct. 13th — <br>
-			<strong>“Origins of Solitude” Exhibition</strong>
-		</p>
-		<p>
-			at Nepenthes New York
-			307 West 38th St. New York, NY 10018
-			212 643 9540
-		</p>
-
-		<a href="#">READ MORE</a>
 
 
 	<?php

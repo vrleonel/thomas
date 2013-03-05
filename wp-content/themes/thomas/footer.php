@@ -13,7 +13,8 @@
 	</div><!-- #main -->
 	
 	<nav id="navigator">
-		<ul>
+		
+		<ul class="left">
 			<li><a href="#tatoo">tatoo</a> </li>
 			<li><a href="#">art</a></li>
 			<li><a href="#">painting</a></li>
@@ -22,7 +23,7 @@
 		</ul>
 		
 
-		<ul>
+		<ul class="right">
 			<li><a href="#">e-mail</a></li>
 			<li><a href="#">instagram</a> </li>
 			<li><a href="#">facebook</a></li>
@@ -34,8 +35,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="<? bloginfo('template_directory');?>/js/plugins.js"></script>
+<script src="<? bloginfo('template_directory');?>/js/main.js"></script>
 
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
