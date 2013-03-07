@@ -39,11 +39,7 @@ $font-type: 'vevey';
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
     color: #222;
 }
 
@@ -51,6 +47,7 @@ body {
     background: #adadad;
     font-size: 1em;
     line-height: 1.4;
+    letter-spacing: 2px;
 }
 
 hr {
@@ -92,9 +89,15 @@ h3{
   font-family: "vevey";
   font-size: 30px;
 }
+h4{
+  font-size:20px;
+  margin:0;
+  padding: 0;
+}
 
 a, a:active, a:link {
   color: #FFF;
+  text-decoration: none;
 }
 a:hover{
   color: #ff4900;
@@ -105,6 +108,10 @@ a:hover{
 
 .vv{
   font-family: 'vevey';
+  letter-spacing: 2px;
+}
+
+.ls{
   letter-spacing: 2px;
 }
 
@@ -135,7 +142,7 @@ body {
 .logo-v{}
 
 .vertical-bar{
-  width: 8px;
+  width: 6px;
   background: #FFF;
   height: 157px;
   margin: 0 auto;
@@ -162,7 +169,7 @@ nav ul {
 }
 #navigator li{
     display: inline-block;
-    font: 18px "vevey";
+    font: 17px "vevey";
     text-transform: uppercase;
     letter-spacing: 2px;
 } 
@@ -202,7 +209,9 @@ body{
   
 }
 #content{
-  margin-bottom: 45px;
+  padding: 45px 0;
+  width: 1000px;
+  margin: 0 auto;
 }
 /* ===============
     ALL: IE Fixes
@@ -216,9 +225,66 @@ body{
    Author's custom styles
    ========================================================================== */
 
+.page-information{
+}
+
+
+.description {}
+.description aside{
+  float:left;
+  margin-right: 50px;
+}
+
+.description article{
+  margin-top: 30px;
+  margin-left: 50px
+}
+
+
+.adress{
+  font-size: 14px;
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+#hexagon {
+  width: 100px;
+  height: 55px;
+  background: red;
+  position: relative;
+}
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px; 
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid red;
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px; 
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid red;
+}
 
 
 
