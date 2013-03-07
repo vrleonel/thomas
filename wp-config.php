@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * As configurações básicas do WordPress.
  *
  * Esse arquivo contém as seguintes configurações: configurações de MySQL, Prefixo de Tabelas,
@@ -16,16 +16,18 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'thomas');
+
+define('DB_NAME', 'ideiaemeia2');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'root');
+define('DB_USER', 'ideiaemeia2');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'megazord');
 
 /** nome do host do MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '200.234.214.80');
+
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +44,15 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'S33$JE{nwm5;!Mw, *l8~.%Ple-U#a=rZU*T&|Xb;]D|-;B|)cMZwP(&8_;?O0F^');
-define('SECURE_AUTH_KEY',  '9C_&gLe+Gb;y8=*MVU=&EUynxd5nxP~uu.Rd>%cg6&MCIRR5GLk0[kw=A/aBrv7s');
-define('LOGGED_IN_KEY',    '-CBT`:k].hZs>aGeU<iVsYTIEuQLBH8glNx@P3{%`o:xEz+c$Pko:]u+7uYME`o3');
-define('NONCE_KEY',        ':rxb2=NM(GC8dw6aXaU;3T>+[F{FN<BX[][RFx!APQO{a8,CDalB%{ e;ys>)O/7');
-define('AUTH_SALT',        '_(CE[ <>J(S_1P OIJO=!W_5*/JV@Lak3[lq#Qw3!dh+cHQT_?A,>K?&7~i-*us0');
-define('SECURE_AUTH_SALT', 'JW_OmMd5<54jB0[Z^+jvj7v/)1<xa_L/vQ@P^/l^>(M5+E>1qFWp80UFT&29)PLv');
-define('LOGGED_IN_SALT',   '{8L$A_<l9[WnIuZ26Zb7o}y|?2b(rauD@ gFKtpumdJlH$%>!7~]qC]eNjte]d9+');
-define('NONCE_SALT',       'Wa]+xaAyEc.>%W|W<m9`-5t^{,eAP}w/<W}Q^&Dk9[$|noH(XL&9?5*hG/HNeyUv');
+
+define('AUTH_KEY',         '<ijXyUQc_:2iI/3o|0.85m#!B{8sDLtt%Hg}*HST1` _),u+`%_o&is`n?{5,jDa');
+define('SECURE_AUTH_KEY',  'h /Me-X/az||+pQ_s8hj%zLt+pO{cKaZ+8saCdcO(yx]qL~~OPoqn0>jCY1NX+:0');
+define('LOGGED_IN_KEY',    '#W@Pbz,,G<Xlu^@u;:Q^xmS5K3-WLl*g?A|h6(#f&No7L#bdc1UjMB>)Fu,Kt|9%');
+define('NONCE_KEY',        '.dZdSahYi~,QM90S=VLWCrE=tb_]OhQLv+Z3P-YcCUX0I?/`(=jW5xW!GVc=/g2U');
+define('AUTH_SALT',        'wYshtx/FS?rQO&WK[duej%&>7j|UiPa}`_./:U-aKZ$<#of)L~C1-LOvlU7Tvh[J');
+define('SECURE_AUTH_SALT', '8zKkM]I8wVWl+%LDoA>A~bP7PZ]+iUIYpX8BW!Px;kl&J>hc&sD/JUi6NIs+sko-');
+define('LOGGED_IN_SALT',   'OY-7+R@HsYn.@M!iQ}k%$2iM.t|G 7lK- H| fC_-+{+|V$8Cp.jWyvz4/G+?)d|');
+define('NONCE_SALT',       'F*KdU]A4DUlT%t2Bu8r;,Sw*OgA|Qd#93#OkPgi1&qSDB^sH&/1wM<E/VLOP`&[W');
 
 /**#@-*/
 
@@ -59,7 +62,8 @@ define('NONCE_SALT',       'Wa]+xaAyEc.>%W|W<m9`-5t^{,eAP}w/<W}Q^&Dk9[$|noH(XL&9
  * Você pode ter várias instalações em um único banco de dados se você der para cada um um único
  * prefixo. Somente números, letras e sublinhados!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'thomas_';
+
 
 /**
  * O idioma localizado do WordPress é o inglês por padrão.
@@ -85,6 +89,6 @@ define('WP_DEBUG', false);
 /** Caminho absoluto para o diretório WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-	
+
 /** Configura as variáveis do WordPress e arquivos inclusos. */
 require_once(ABSPATH . 'wp-settings.php');
