@@ -162,7 +162,11 @@ nav a:hover {
     MOBILE: Main
    ============== */
 body {
-  background: url("img/bg.png") center center; }
+  background: url(img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 #content {
   padding: 45px 0;
@@ -189,33 +193,38 @@ body {
 .adress {
   font-size: 14px; }
 
-#hexagon {
-  width: 100px;
-  height: 55px;
-  background: red;
-  position: relative; }
-
-#hexagon:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid red; }
-
-#hexagon:after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid red; }
+/* =====================================
+        Information
+ ======================================= */
+.information {
+  margin-top: 70px; }
+  .information div {
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 14px; }
+  .information article {
+    text-align: left;
+    font-size: 14px; }
+  .information aside {
+    float: right;
+    width: 30%; }
+  .information aside h5 {
+    font-style: italic;
+    font-size: 14px; }
+  .information aside .ico {
+    background: url(img/sprite.png) 0px 0px no-repeat;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    float: left; }
+  .information .item-1 .ico {
+    background-position: 0px -533px; }
+  .information .item-2 .ico {
+    background-position: 0px -605px; }
+  .information .item-3 .ico {
+    background-position: 0px -675px; }
 
 /* ==========================================================================
    Media Queries

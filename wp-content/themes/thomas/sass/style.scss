@@ -203,7 +203,11 @@ nav a:hover {
     MOBILE: Main
    ============== */
 body{
-  background: url("img/bg.png") center center ;
+  background: url(img/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #main {
   
@@ -245,57 +249,49 @@ body{
   font-size: 14px;
 }
 
+/* =====================================
+        Information
+ ======================================= */
+.information{
+  margin-top: 70px;
+
+  div{
+    width: 50%;
+    float: left;
+    margin-left: 10%;
+    text-align: left;
+    font-size: 14px;
+  }
 
 
+  article{
+    text-align: left;
+    font-size: 14px;
+  }
 
+  aside{
+    float: right;
+    width: 30%;
+  }
 
+  aside h5{
+    font-style: italic;
+    font-size: 14px;
+  }
 
+  aside .ico{
+    background: url(img/sprite.png) 0px 0px no-repeat;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    float:left;
+  }
 
+  .item-1 .ico{ background-position: 0px -533px; }
+  .item-2 .ico{ background-position: 0px -605px; }
+  .item-3 .ico{ background-position: 0px -675px; }
 
-
-
-
-
-
-#hexagon {
-  width: 100px;
-  height: 55px;
-  background: red;
-  position: relative;
 }
-#hexagon:before {
-  content: "";
-  position: absolute;
-  top: -25px; 
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid red;
-}
-#hexagon:after {
-  content: "";
-  position: absolute;
-  bottom: -25px; 
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid red;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
