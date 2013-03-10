@@ -73,6 +73,6 @@
 				<li><a href="#">tumblr</a></li>
 			</ul>
 		</nav>
-</header>
+	</header>
 	<div id="main">
 	

@@ -21,7 +21,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url(http://placekitten.com/240/240);
+    /*background-image: url(http://lorempixel.com/230/230);*/
     visibility: visible;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
@@ -29,21 +29,39 @@
             transform: rotate(-60deg);
     }
 .hexagon-in2:hover {
-    background-image: url(http://placekitten.com/241/241);
-    }
+    -webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
+}
+
+.hex-hover{
+    background: url(../img/sprite.png) -5px -750px no-repeat;
+    position: relative;
+    top: 45%;
+    margin: 0 auto;
+    display: none;
+    width: 35px ;
+    height: 35px;
+    
+}
+
+.hexagon-in2:hover span{
+    display: block;
+}
+
+
+
+/*.hexagon1 {
+    width: 315px; 
+    height: 200px; 
+    margin: 0 0 0 -80px; 
+
+    display: inline-block;
+    }*/
 
 .hexagon1 {
-    width: 400px;
-    height: 200px;
-    margin: 0 0 0 -80px;
-    }
-.hexagon2 {
     width: 200px;
-    height: 400px;
+    height: 315px;
     margin: -80px 0 0 20px;
-    }
-.dodecagon {
-    width: 200px;
-    height: 200px;
-    margin: -80px 0 0 20px;
-    }
+    display: inline-block;
+    z-index: 1;
+}

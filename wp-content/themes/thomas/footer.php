@@ -11,7 +11,25 @@
  */
 ?>
 	</div><!-- #main -->
-	<div id="footer"></div>
+	<div id="footer">
+		<nav id="navigator">	
+			<ul class="left">
+				<li><a href="#tatoo">tatoo</a> </li>
+				<li><a href="#">art</a></li>
+				<li><a href="#">painting</a></li>
+				<li><a href="<?= home_url('/information');?>">information</a></li>
+				<li><a href="#">blog/news</a></li>
+			</ul>
+			
+
+			<ul class="right social-links">
+				<li><a href="#">e-mail</a></li>
+				<li><a href="#">instagram</a> </li>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">tumblr</a></li>
+			</ul>
+		</nav>
+	</div>
 </div><!-- #wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
