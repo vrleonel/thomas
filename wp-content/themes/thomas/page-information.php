@@ -76,35 +76,27 @@ get_header(); ?>
 			<article class="item-1">
 				<span class="ico"></span>
 				<h5>Residual Self-Image</h5>
-				<p>Personal exploration and some more describing what this is all about goes here.</p>
+				<p>Personal exploration and some more describing what this is all about goes here.<br>
 					<a href="#">residualselfimage.wordpress.com</a>
+				</p>
 			</article>
 			<article class="item-2">
 				<span class="ico"></span>
 				<h5>Shirt And Destroy</h5>
-				<p>I’ve been creating and selling t-shirts with some friends and little more description of this.</p>
-				<a href="#">shirtsanddestroy.com/thomashooper</a>
+				<p>I’ve been creating and selling t-shirts with some friends and little more description of this.<br>
+					<a href="#">shirtsanddestroy.com/thomashooper</a>
+				</p>
 			</article>
 			
 			<article class="item-3">
 				<span class="ico"></span>
 				<h5>Artifact Publishing</h5>
-				<p>Limited series books and prints little description of this venture here.</p>
-				<a href="#">artifactpublishing.com</a>
+				<p>Limited series books and prints little description of this venture here.<br>
+					<a href="#">artifactpublishing.com</a>
+				</p>
 			</article>
 		</aside>
 	</section>
-	
-
-
-
-	
-
-	
-		
-		
-	
-
 
 </div><!-- #content -->
 

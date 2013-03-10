@@ -15,6 +15,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */ 
 
 @import url("css/normalize.css");
+@import url("css/hexagon.css");
 
 /* ==========================
         Variables
@@ -121,8 +122,7 @@ a:hover{
    ========================================================================== */
 body {
     font: 16px "Times New Roman", Times, serif;
-    line-height: 26px;
-
+    line-height: 1.375em;
 }
 
 #main{
@@ -161,11 +161,9 @@ nav ul {
   bottom: 0;
   position: fixed;
   background: #000;
-  
-  
   height: 35px;
-
   padding-top:10px;
+
 }
 #navigator li{
     display: inline-block;
@@ -190,6 +188,17 @@ nav a:visited {
 nav a:hover {
    color: #ff4900;
 }
+
+#navigator ul.social-links li a{
+  font-size: 13px;
+}
+
+#navigator ul.social-links li a{
+  border-left: 1px solid #FFF;
+  padding: 15px 10px 15px 10px;
+  
+}
+
 
 .left{
   float: left;
@@ -256,13 +265,12 @@ body{
   margin-top: 70px;
 
   div{
-    width: 50%;
+    width: 45%;
     float: left;
-    margin-left: 10%;
+    margin-left: 5%;
     text-align: left;
     font-size: 14px;
   }
-
 
   article{
     text-align: left;
@@ -271,7 +279,7 @@ body{
 
   aside{
     float: right;
-    width: 30%;
+    width: 45%;
   }
 
   aside h5{
@@ -279,18 +287,42 @@ body{
     font-size: 14px;
   }
 
+  
   aside .ico{
     background: url(img/sprite.png) 0px 0px no-repeat;
+    background-size: auto;
     width: 70px;
     height: 70px;
     display: inline-block;
     float:left;
+    margin:11px 22px 0 0;
   }
+  aside p{
+    font-size: 12px;
+    margin-top: -22px;
+
+    margin-left: 92px;
+  }
+
+  aside p a{
+    font-size: 14px;
+    text-decoration: underline;
+  }
+
+
 
   .item-1 .ico{ background-position: 0px -533px; }
   .item-2 .ico{ background-position: 0px -605px; }
   .item-3 .ico{ background-position: 0px -675px; }
 
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#footer{
+  height: 100px;
+  clear:both;
 }
 /* ==========================================================================
    Media Queries
