@@ -27,6 +27,11 @@
        -moz-transform: rotate(-60deg);
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
+
+    transition: all 1s;
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari and Chrome */
+    -o-transition: all 1s; /* Opera */
     }
 .hexagon-in2:hover {
     -webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
@@ -38,22 +43,28 @@
     position: relative;
     top: 45%;
     margin: 0 auto;
-    display: none;
     width: 35px ;
     height: 35px;
-    
+    opacity: 0;
+    display: none;
+    transition: all 1s;
+    -moz-transition: all 1s; /* Firefox 4 */
+    -webkit-transition: all 1s; /* Safari and Chrome */
+    -o-transition: all 1s; /* Opera */
+
 }
 
 .hexagon-in2:hover span{
+    opacity: 1;
     display: block;
 }
 
 
 
 /*.hexagon1 {
-    width: 315px; 
-    height: 200px; 
-    margin: 0 0 0 -80px; 
+    width: 315px;
+    height: 200px;
+    margin: 0 0 0 -80px;
 
     display: inline-block;
     }*/
