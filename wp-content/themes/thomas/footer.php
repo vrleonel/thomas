@@ -19,6 +19,7 @@
 				<li><a href="#">painting</a></li>
 				<li><a href="<?= home_url('/information');?>">information</a></li>
 				<li><a href="#">blog/news</a></li>
+				<li><a href="#">shop</a></li>
 			</ul>
 			
 

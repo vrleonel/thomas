@@ -309,11 +309,30 @@ body{
     text-decoration: underline;
   }
 
-
-
   .item-1 .ico{ background-position: 0px -533px; }
   .item-2 .ico{ background-position: 0px -605px; }
   .item-3 .ico{ background-position: 0px -675px; }
+}
+
+/* =====================================
+    Shop
+ ======================================= */
+
+.page-shop{
+  h5{
+    font-size: 20px;
+  }
+
+  section{
+    display: block;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  aside{
+    float:left;
+    margin-right: 20px;
+  }
 
 }
 
