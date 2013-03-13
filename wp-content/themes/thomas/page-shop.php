@@ -23,7 +23,7 @@ get_header(); ?>
       100 prints signed & numbered by Thomas Hooper <br>
       6 color print on Cougar white paper</p>
 
-      <p>buy online <br>
+      <p class="small"><strong>BUY ONLINE</strong> <br>
       <a href="http://burlesquedesign.com/node/1790">http://burlesquedesign.com/node/1790</a></p>
     </article>
   </section>
@@ -40,11 +40,11 @@ get_header(); ?>
       <p>screenprinted this artwork as a 24 x 18" 6-color art print and published it 
       in two different editions.</p>
 
-      <h5>STANDARD & VARIANT EDITIONS</h5>
-      <p>100 prints signed & numbered by Thomas Hooper <br>
+      <p>STANDARD & VARIANT EDITIONS <br>
+      100 prints signed & numbered by Thomas Hooper <br>
       6 color print on Cougar white paper</p>
 
-      <p>buy online <br>
+      <p class="small"><strong>BUY ONLINE</strong><br>
       <a href="http://burlesquedesign.com/node/1790">http://burlesquedesign.com/node/1790</a></p>
     </article>
   </section>
@@ -61,11 +61,11 @@ get_header(); ?>
       <p>screenprinted this artwork as a 24 x 18" 6-color art print and published it 
       in two different editions.</p>
 
-      <h5>STANDARD & VARIANT EDITIONS</h5>
-      <p>100 prints signed & numbered by Thomas Hooper <br>
+      <p>STANDARD & VARIANT EDITIONS <br>
+      100 prints signed & numbered by Thomas Hooper <br>
       6 color print on Cougar white paper</p>
 
-      <p>buy online <br>
+      <p class="small"><strong>BUY ONLINE</strong><br>
       <a href="http://burlesquedesign.com/node/1790">http://burlesquedesign.com/node/1790</a></p>
     </article>
   </section>

@@ -157,8 +157,9 @@ nav a:hover {
   font-size: 13px; }
 
 #navigator ul.social-links li a {
-  border-left: 1px solid white;
-  padding: 15px 10px 15px 10px; }
+  border-left: 1px solid #686868;
+  padding: 15px 10px 15px 10px;
+  color: #686868; }
 
 .left {
   float: left; }
@@ -178,7 +179,8 @@ body {
 
 #content {
   padding: 45px 0;
-  width: 1000px;
+  width: 100%;
+  min-width: 1000px;
   margin: 0 auto; }
 
 /* ===============
@@ -250,11 +252,17 @@ body {
   font-size: 20px; }
 .page-shop section {
   display: block;
-  margin: 20px 0;
+  margin: 0px 0 20px 0;
   font-size: 16px; }
 .page-shop aside {
   float: left;
-  margin-right: 20px; }
+  margin-right: 40px;
+  vertical-align: center; }
+.page-shop article {
+  padding-top: 50px; }
+.page-shop .small {
+  font-size: 0.875em;
+  /*14/16*/ }
 
 /* ==========================================================================
    Footer
@@ -310,10 +318,12 @@ body {
   .main aside {
     float: right;
     width: 28%; } }
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1024px) {
   /* ===============
       Maximal Width
-     =============== */ }
+     =============== */
+  #main {
+    padding: 0 20px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -365,61 +375,3 @@ body {
 
 .clearfix {
   *zoom: 1; }
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: black !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }
