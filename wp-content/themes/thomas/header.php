@@ -33,6 +33,9 @@
 <meta name="viewport" content="width=device-width">
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="<? bloginfo('template_directory');?>/css/normalize.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<? bloginfo('template_directory');?>/css/hexagon.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<? bloginfo('template_directory');?>/css/common.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <script src="<? bloginfo('template_directory');?>/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 

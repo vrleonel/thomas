@@ -1,0 +1,50 @@
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/images";
+@import "compass/css3/pie";
+@import "compass/css3/inline-block";
+@import "compass/css3/text-shadow";
+
+$pie-behavior: url("/claro-pe-tcf/static/web/js/PIE.htc");
+$pie-base-class: pie-element;
+.pie-element {
+    @include pie-element(relative, z-index);
+    @include pie-watch-ancestors(2);
+}
+
+
+@mixin imgrpl($width: 0, $height:0) {
+  display:block;
+  text-indent:-9999px;
+  font-size:0.1pt;
+  width: $width;
+  height: $height;
+ }
+
+@mixin absolute($top: 0, $left:0) {
+  position:absolute;
+  top:$top;
+  left:$left;
+}
+
+@mixin arredondado($size:5px){
+  border-radius:$size;
+  -moz-border-radius:$size;
+  -webkit-border-radius:$size;
+}
+
+@mixin vertical($height:20px){
+  height:$height;
+  line-height:$height;
+  vertical-align:middle;
+}
+
+ @mixin gradient($first, $second) {
+  background: $second;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$first', endColorstr='$second');
+  background: -webkit-gradient(linear, left top, left bottom, from($first), to($second));
+  background: -moz-linear-gradient(top,  $first,  $second);
+}

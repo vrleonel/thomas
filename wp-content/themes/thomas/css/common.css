@@ -1,0 +1,516 @@
+/* line 13, ../sass/_mixins.scss */
+.pie-element {
+  behavior: url("/claro-pe-tcf/static/web/js/PIE.htc");
+  position: relative;
+  -pie-watch-ancestors: 2;
+}
+
+/* ==========================
+        Variables
+   ========================== */
+/* ==========================
+         Font face
+   ========================== */
+@font-face {
+  font-family: 'vevey';
+  src: url("font/vevey.eot");
+  src: url("font/vevey.eot?#iefix") format("embedded-opentype"), url("font/vevey.woff") format("woff"), url("font/vevey.ttf") format("truetype"), url("font/vevey.svg#vevey") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+/* line 25, ../sass/common.scss */
+html, button, input, select, textarea {
+  color: #222;
+}
+
+/* line 29, ../sass/common.scss */
+body {
+  background: #adadad;
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+/* line 36, ../sass/common.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 45, ../sass/common.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 49, ../sass/common.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 55, ../sass/common.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, ../sass/common.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 66, ../sass/common.scss */
+h1 {
+  font-family: "vevey";
+  font-size: 80px;
+}
+
+/* line 71, ../sass/common.scss */
+h3 {
+  font-family: "vevey";
+  font-size: 30px;
+}
+
+/* line 75, ../sass/common.scss */
+h4 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 81, ../sass/common.scss */
+a, a:active, a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 85, ../sass/common.scss */
+a:hover {
+  color: #ff4900;
+}
+
+/* ==============
+    Commons
+   ============== */
+/* line 92, ../sass/common.scss */
+.vv {
+  font-family: 'vevey';
+  letter-spacing: 2px;
+}
+
+/* line 97, ../sass/common.scss */
+.ls {
+  letter-spacing: 2px;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+/* line 105, ../sass/common.scss */
+body {
+  font: 16px "Times New Roman", Times, serif;
+  line-height: 1.375em;
+}
+
+/* line 110, ../sass/common.scss */
+#main {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 115, ../sass/common.scss */
+.logo-h {
+  background: url(../img/sprite.png) top center no-repeat;
+  width: 373px;
+  height: 97px;
+  text-align: center;
+  text-indent: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* line 126, ../sass/common.scss */
+.vertical-bar {
+  width: 6px;
+  background: #FFF;
+  height: 157px;
+  margin: 0 auto;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+/* line 137, ../sass/common.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 141, ../sass/common.scss */
+#navigator {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background: #000;
+  height: 35px;
+  padding-top: 10px;
+}
+
+/* line 150, ../sass/common.scss */
+#navigator li {
+  display: inline-block;
+  font: 17px "vevey";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* line 158, ../sass/common.scss */
+nav a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* line 165, ../sass/common.scss */
+nav a:visited {
+  color: #FFFFFF;
+}
+
+/* line 170, ../sass/common.scss */
+nav a:hover {
+  color: #ff4900;
+}
+
+/* line 174, ../sass/common.scss */
+#navigator ul.social-links li a {
+  font-size: 13px;
+}
+
+/* line 178, ../sass/common.scss */
+#navigator ul.social-links li a {
+  border-left: 1px solid #686868;
+  padding: 15px 10px 15px 10px;
+  color: #686868;
+}
+
+/* line 186, ../sass/common.scss */
+.left {
+  float: left;
+}
+
+/* line 190, ../sass/common.scss */
+.right {
+  float: right;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+/* line 197, ../sass/common.scss */
+body {
+  background: url(../img/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 207, ../sass/common.scss */
+#content {
+  padding: 45px 0;
+  /*width: 100%;
+  min-width: 1000px;*/
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 218, ../sass/common.scss */
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 226, ../sass/common.scss */
+.page-information {
+  width: 100%;
+  min-width: 100%;
+}
+
+/* line 233, ../sass/common.scss */
+.description aside {
+  float: left;
+  margin-right: 50px;
+}
+
+/* line 238, ../sass/common.scss */
+.description article {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+/* line 244, ../sass/common.scss */
+.adress {
+  font-size: 14px;
+}
+
+/* =====================================
+        Information
+ ======================================= */
+/* line 251, ../sass/common.scss */
+.information {
+  margin-top: 70px;
+}
+/* line 254, ../sass/common.scss */
+.information div {
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+  text-align: left;
+  font-size: 14px;
+}
+/* line 262, ../sass/common.scss */
+.information article {
+  text-align: left;
+  font-size: 14px;
+}
+/* line 267, ../sass/common.scss */
+.information aside {
+  float: right;
+  width: 45%;
+}
+/* line 272, ../sass/common.scss */
+.information aside h5 {
+  font-style: italic;
+  font-size: 14px;
+}
+/* line 278, ../sass/common.scss */
+.information aside .ico {
+  background: url(../img/sprite.png) 0px 0px no-repeat;
+  background-size: auto;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  float: left;
+  margin: 11px 22px 0 0;
+}
+/* line 287, ../sass/common.scss */
+.information aside p {
+  font-size: 12px;
+  margin-top: -22px;
+  margin-left: 92px;
+}
+/* line 294, ../sass/common.scss */
+.information aside p a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+/* line 299, ../sass/common.scss */
+.information .item-1 .ico {
+  background-position: 0px -533px;
+}
+/* line 300, ../sass/common.scss */
+.information .item-2 .ico {
+  background-position: 0px -605px;
+}
+/* line 301, ../sass/common.scss */
+.information .item-3 .ico {
+  background-position: 0px -675px;
+}
+
+/* =====================================
+    Shop
+ ======================================= */
+/* line 309, ../sass/common.scss */
+.page-shop h5 {
+  font-size: 20px;
+}
+/* line 313, ../sass/common.scss */
+.page-shop section {
+  display: block;
+  margin: 0px 0 20px 0;
+  font-size: 16px;
+}
+/* line 319, ../sass/common.scss */
+.page-shop aside {
+  float: left;
+  margin-right: 40px;
+  vertical-align: center;
+}
+/* line 325, ../sass/common.scss */
+.page-shop article {
+  padding-top: 50px;
+}
+/* line 329, ../sass/common.scss */
+.page-shop .small {
+  font-size: 0.875em;
+  /*14/16*/
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+/* line 338, ../sass/common.scss */
+#footer {
+  height: 100px;
+  clear: both;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  /* line 356, ../sass/common.scss */
+  nav li:first-child a {
+    margin-left: 0;
+  }
+
+  /* line 360, ../sass/common.scss */
+  nav li:last-child a {
+    margin-right: 0;
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  /* line 368, ../sass/common.scss */
+  nav ul li {
+    display: inline;
+  }
+
+  /* line 372, ../sass/common.scss */
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  /* line 384, ../sass/common.scss */
+  .header-container,
+  .main aside {
+    -webkit-box-shadow: 0 5px 10px #aaaaaa;
+    -moz-box-shadow: 0 5px 10px #aaaaaa;
+    box-shadow: 0 5px 10px #aaaaaa;
+  }
+
+  /* ============
+      WIDE: Menu
+     ============ */
+  /* line 394, ../sass/common.scss */
+  .title {
+    float: left;
+  }
+
+  /* ============
+      WIDE: Main
+     ============ */
+  /* line 406, ../sass/common.scss */
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  /* line 411, ../sass/common.scss */
+  .main aside {
+    float: right;
+    width: 28%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  /* line 423, ../sass/common.scss */
+  #main {
+    padding: 0 20px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 438, ../sass/common.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+/* line 445, ../sass/common.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/* line 452, ../sass/common.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 457, ../sass/common.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 469, ../sass/common.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 478, ../sass/common.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 483, ../sass/common.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 488, ../sass/common.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 492, ../sass/common.scss */
+.clearfix {
+  *zoom: 1;
+}

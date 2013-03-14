@@ -2,8 +2,11 @@
 
 Preciso colocar aqui alguma coisa
 
-# Usando sass
+# Usando sass e compass
+
+$ compass watch 
 
 #Usando initializr
+
 
 

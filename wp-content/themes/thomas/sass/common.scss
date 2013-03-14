@@ -1,22 +1,4 @@
-/*
-Theme Name: Thomas
-Theme URI: http://thomashooper
-Author: Vitor Ruiz Leonel
-Author URI: http://level99.com.br
-Description: 
-Version: 0.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
-Text Domain: twentytwelve
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/ 
-
-@import url("css/normalize.css");
-@import url("css/hexagon.css");
-
+@import "mixins";
 /* ==========================
         Variables
    ========================== */
@@ -131,7 +113,7 @@ body {
 }
 
 .logo-h{
-  background: url(img/sprite.png) top center no-repeat;
+  background: url(../img/sprite.png) top center no-repeat;
   width: 373px;
   height: 97px;
   text-align: center;
@@ -213,7 +195,7 @@ nav a:hover {
     MOBILE: Main
    ============== */
 body{
-  background: url(img/bg.png) no-repeat center center fixed; 
+  background: url(../img/bg.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,8 +206,9 @@ body{
 }
 #content{
   padding: 45px 0;
-  width: 100%;
-  min-width: 1000px;
+  /*width: 100%;
+  min-width: 1000px;*/
+  width: 1000px;
   margin: 0 auto;
 }
 /* ===============
@@ -241,6 +224,8 @@ body{
    ========================================================================== */
 
 .page-information{
+  width: 100%;
+  min-width: 100%;
 }
 
 
@@ -291,7 +276,7 @@ body{
 
   
   aside .ico{
-    background: url(img/sprite.png) 0px 0px no-repeat;
+    background: url(../img/sprite.png) 0px 0px no-repeat;
     background-size: auto;
     width: 70px;
     height: 70px;
@@ -507,4 +492,3 @@ body{
 .clearfix {
     *zoom: 1;
 }
-
