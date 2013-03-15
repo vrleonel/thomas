@@ -1,3 +1,6 @@
+
+
+
 <?php
 get_header(); ?>
 
@@ -6,14 +9,7 @@ get_header(); ?>
   <?php
     if (have_posts()) : while (have_posts()) : the_post(); 
     ?>
-    
-    <div class="nav-links">
-    	<span class="next"><?= next_post_link( '%link', '>', true ); ?></span>
-    	<span class="close"></span>
-    	<span class="prev"><?= previous_post_link( "%link", "<" , true); ?></span>
-		</div>
-    
-
+    <h2><? the_title( ); ?></h2>
     <?php the_content(); ?>
 
    

@@ -58,8 +58,5 @@
 
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-	<header>		
-		
-	</header>
 	<div id="main">
 	

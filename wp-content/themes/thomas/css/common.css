@@ -115,21 +115,21 @@ a:hover {
 }
 
 /* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
-/* line 105, ../sass/common.scss */
+/* line 104, ../sass/common.scss */
 body {
   font: 16px "Times New Roman", Times, serif;
   line-height: 1.375em;
 }
 
-/* line 110, ../sass/common.scss */
+/* line 109, ../sass/common.scss */
 #main {
   text-align: center;
   color: #FFFFFF;
+  padding: 0 20px;
 }
 
-/* line 115, ../sass/common.scss */
+/* line 116, ../sass/common.scss */
 .logo-h {
   background: url(../img/sprite.png) top center no-repeat;
   width: 373px;
@@ -140,7 +140,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 126, ../sass/common.scss */
+/* line 127, ../sass/common.scss */
 .vertical-bar {
   width: 6px;
   background: #FFF;
@@ -151,13 +151,13 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
-/* line 137, ../sass/common.scss */
+/* line 138, ../sass/common.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 141, ../sass/common.scss */
+/* line 142, ../sass/common.scss */
 #navigator {
   width: 100%;
   bottom: 0;
@@ -167,49 +167,49 @@ nav ul {
   padding-top: 10px;
 }
 
-/* line 150, ../sass/common.scss */
+/* line 151, ../sass/common.scss */
 #navigator li {
   display: inline-block;
-  font: 17px "vevey";
+  font: 18px "vevey";
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-/* line 158, ../sass/common.scss */
+/* line 159, ../sass/common.scss */
 nav a {
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 10px;
 }
 
-/* line 165, ../sass/common.scss */
+/* line 166, ../sass/common.scss */
 nav a:visited {
   color: #FFFFFF;
 }
 
-/* line 170, ../sass/common.scss */
+/* line 171, ../sass/common.scss */
 nav a:hover {
   color: #ff4900;
 }
 
-/* line 174, ../sass/common.scss */
+/* line 175, ../sass/common.scss */
 #navigator ul.social-links li a {
   font-size: 13px;
 }
 
-/* line 178, ../sass/common.scss */
+/* line 179, ../sass/common.scss */
 #navigator ul.social-links li a {
   border-left: 1px solid #686868;
   padding: 15px 10px 15px 10px;
   color: #686868;
 }
 
-/* line 186, ../sass/common.scss */
+/* line 187, ../sass/common.scss */
 .left {
   float: left;
 }
 
-/* line 190, ../sass/common.scss */
+/* line 191, ../sass/common.scss */
 .right {
   float: right;
 }
@@ -217,7 +217,7 @@ nav a:hover {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 197, ../sass/common.scss */
+/* line 198, ../sass/common.scss */
 body {
   background: url(../img/bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -226,7 +226,7 @@ body {
   background-size: cover;
 }
 
-/* line 207, ../sass/common.scss */
+/* line 208, ../sass/common.scss */
 #content {
   padding: 45px 0;
   /*width: 100%;
@@ -238,7 +238,7 @@ body {
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 218, ../sass/common.scss */
+/* line 219, ../sass/common.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -246,25 +246,26 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 226, ../sass/common.scss */
-.page-information {
+/* line 227, ../sass/common.scss */
+#content.page-gallery {
+  min-width: 1000px;
   width: 100%;
-  min-width: 100%;
+  padding: 45px 0;
 }
 
-/* line 233, ../sass/common.scss */
+/* line 239, ../sass/common.scss */
 .description aside {
   float: left;
   margin-right: 50px;
 }
 
-/* line 238, ../sass/common.scss */
+/* line 244, ../sass/common.scss */
 .description article {
   margin-top: 30px;
   margin-left: 50px;
 }
 
-/* line 244, ../sass/common.scss */
+/* line 250, ../sass/common.scss */
 .adress {
   font-size: 14px;
 }
@@ -272,11 +273,11 @@ body {
 /* =====================================
         Information
  ======================================= */
-/* line 251, ../sass/common.scss */
+/* line 257, ../sass/common.scss */
 .information {
   margin-top: 70px;
 }
-/* line 254, ../sass/common.scss */
+/* line 260, ../sass/common.scss */
 .information div {
   width: 45%;
   float: left;
@@ -284,22 +285,22 @@ body {
   text-align: left;
   font-size: 14px;
 }
-/* line 262, ../sass/common.scss */
+/* line 268, ../sass/common.scss */
 .information article {
   text-align: left;
   font-size: 14px;
 }
-/* line 267, ../sass/common.scss */
+/* line 273, ../sass/common.scss */
 .information aside {
   float: right;
   width: 45%;
 }
-/* line 272, ../sass/common.scss */
+/* line 278, ../sass/common.scss */
 .information aside h5 {
   font-style: italic;
   font-size: 14px;
 }
-/* line 278, ../sass/common.scss */
+/* line 284, ../sass/common.scss */
 .information aside .ico {
   background: url(../img/sprite.png) 0px 0px no-repeat;
   background-size: auto;
@@ -309,26 +310,26 @@ body {
   float: left;
   margin: 11px 22px 0 0;
 }
-/* line 287, ../sass/common.scss */
+/* line 293, ../sass/common.scss */
 .information aside p {
   font-size: 12px;
   margin-top: -22px;
   margin-left: 92px;
 }
-/* line 294, ../sass/common.scss */
+/* line 300, ../sass/common.scss */
 .information aside p a {
   font-size: 14px;
   text-decoration: underline;
 }
-/* line 299, ../sass/common.scss */
+/* line 305, ../sass/common.scss */
 .information .item-1 .ico {
   background-position: 0px -533px;
 }
-/* line 300, ../sass/common.scss */
+/* line 306, ../sass/common.scss */
 .information .item-2 .ico {
   background-position: 0px -605px;
 }
-/* line 301, ../sass/common.scss */
+/* line 307, ../sass/common.scss */
 .information .item-3 .ico {
   background-position: 0px -675px;
 }
@@ -336,36 +337,52 @@ body {
 /* =====================================
     Shop
  ======================================= */
-/* line 309, ../sass/common.scss */
+/* line 315, ../sass/common.scss */
 .page-shop h5 {
   font-size: 20px;
 }
-/* line 313, ../sass/common.scss */
+/* line 319, ../sass/common.scss */
 .page-shop section {
   display: block;
   margin: 0px 0 20px 0;
   font-size: 16px;
 }
-/* line 319, ../sass/common.scss */
+/* line 325, ../sass/common.scss */
 .page-shop aside {
   float: left;
   margin-right: 40px;
   vertical-align: center;
 }
-/* line 325, ../sass/common.scss */
+/* line 331, ../sass/common.scss */
 .page-shop article {
   padding-top: 50px;
 }
-/* line 329, ../sass/common.scss */
+/* line 335, ../sass/common.scss */
 .page-shop .small {
   font-size: 0.875em;
   /*14/16*/
 }
 
+/* =====================================
+    Single-gallery
+ ======================================= */
+/* line 346, ../sass/common.scss */
+#content.single-gallery {
+  min-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 353, ../sass/common.scss */
+.single-gallery img {
+  width: 100%;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 338, ../sass/common.scss */
+/* line 363, ../sass/common.scss */
 #footer {
   height: 100px;
   clear: both;
@@ -378,12 +395,12 @@ body {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 356, ../sass/common.scss */
+  /* line 381, ../sass/common.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 360, ../sass/common.scss */
+  /* line 385, ../sass/common.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -391,12 +408,12 @@ body {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 368, ../sass/common.scss */
+  /* line 393, ../sass/common.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 372, ../sass/common.scss */
+  /* line 397, ../sass/common.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -405,7 +422,7 @@ body {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 384, ../sass/common.scss */
+  /* line 409, ../sass/common.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
@@ -416,7 +433,7 @@ body {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 394, ../sass/common.scss */
+  /* line 419, ../sass/common.scss */
   .title {
     float: left;
   }
@@ -424,13 +441,13 @@ body {
   /* ============
       WIDE: Main
      ============ */
-  /* line 406, ../sass/common.scss */
+  /* line 431, ../sass/common.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 411, ../sass/common.scss */
+  /* line 436, ../sass/common.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -440,15 +457,11 @@ body {
   /* ===============
       Maximal Width
      =============== */
-  /* line 423, ../sass/common.scss */
-  #main {
-    padding: 0 20px;
-  }
 }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 438, ../sass/common.scss */
+/* line 465, ../sass/common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -456,7 +469,7 @@ body {
   *text-indent: -9999px;
 }
 
-/* line 445, ../sass/common.scss */
+/* line 472, ../sass/common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -464,13 +477,13 @@ body {
   height: 150%;
 }
 
-/* line 452, ../sass/common.scss */
+/* line 479, ../sass/common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 457, ../sass/common.scss */
+/* line 484, ../sass/common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -482,7 +495,7 @@ body {
   width: 1px;
 }
 
-/* line 469, ../sass/common.scss */
+/* line 496, ../sass/common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -493,24 +506,24 @@ body {
   width: auto;
 }
 
-/* line 478, ../sass/common.scss */
+/* line 505, ../sass/common.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 483, ../sass/common.scss */
+/* line 510, ../sass/common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 488, ../sass/common.scss */
+/* line 515, ../sass/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 492, ../sass/common.scss */
+/* line 519, ../sass/common.scss */
 .clearfix {
   *zoom: 1;
 }

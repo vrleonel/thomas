@@ -100,7 +100,6 @@ a:hover{
 
 
 /* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 body {
     font: 16px "Times New Roman", Times, serif;
@@ -110,6 +109,8 @@ body {
 #main{
   text-align: center;
   color: #FFFFFF;
+  padding: 0 20px;
+
 }
 
 .logo-h{
@@ -149,7 +150,7 @@ nav ul {
 }
 #navigator li{
     display: inline-block;
-    font: 17px "vevey";
+    font: 18px "vevey";
     text-transform: uppercase;
     letter-spacing: 2px;
 } 
@@ -223,9 +224,14 @@ body{
    Author's custom styles
    ========================================================================== */
 
-.page-information{
+#content.page-gallery{
+  min-width: 1000px;
   width: 100%;
-  min-width: 100%;
+  padding: 45px 0;
+}
+
+.page-information{
+
 }
 
 
@@ -332,6 +338,25 @@ body{
 
 }
 
+
+/* =====================================
+    Single-gallery
+ ======================================= */
+
+ #content.single-gallery{
+  min-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+ }
+
+ .single-gallery img{
+    width:100%;
+
+ }
+
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -419,9 +444,11 @@ body{
 /* ===============
     Maximal Width
    =============== */
-
+   #content{
+   
+   }
    #main{
-    padding: 0 20px;
+    
    }
 
     .wrapper {

@@ -5,7 +5,7 @@ Template Name: Gallery
 
 get_header(); ?>
 
-<div id="content" class="page-information" role="main">
+<div id="content" class="page-gallery" role="main">
 
 	<div class="hexagon hexagon1">
 	    <div class="hexagon-in1">
