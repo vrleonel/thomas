@@ -377,12 +377,41 @@ body {
 /* line 353, ../sass/common.scss */
 .single-gallery img {
   width: 100%;
+  height: auto;
+}
+
+/* line 358, ../sass/common.scss */
+.nav-links {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+/* line 363, ../sass/common.scss */
+.nav-links span {
+  display: inline-block;
+  width: 42px;
+  height: 52px;
+}
+/* line 368, ../sass/common.scss */
+.nav-links a {
+  background: url("../img/gallery-ico.png") top left no-repeat;
+  display: block;
+  width: 42px;
+  height: 52px;
+}
+/* line 376, ../sass/common.scss */
+.nav-links .close a {
+  background: url("../img/gallery-ico.png") top center no-repeat;
+}
+/* line 379, ../sass/common.scss */
+.nav-links .next a {
+  background: url("../img/gallery-ico.png") top right no-repeat;
 }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 363, ../sass/common.scss */
+/* line 389, ../sass/common.scss */
 #footer {
   height: 100px;
   clear: both;
@@ -395,12 +424,12 @@ body {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 381, ../sass/common.scss */
+  /* line 407, ../sass/common.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 385, ../sass/common.scss */
+  /* line 411, ../sass/common.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -408,12 +437,12 @@ body {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 393, ../sass/common.scss */
+  /* line 419, ../sass/common.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 397, ../sass/common.scss */
+  /* line 423, ../sass/common.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -422,7 +451,7 @@ body {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 409, ../sass/common.scss */
+  /* line 435, ../sass/common.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
@@ -433,7 +462,7 @@ body {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 419, ../sass/common.scss */
+  /* line 445, ../sass/common.scss */
   .title {
     float: left;
   }
@@ -441,13 +470,13 @@ body {
   /* ============
       WIDE: Main
      ============ */
-  /* line 431, ../sass/common.scss */
+  /* line 457, ../sass/common.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 436, ../sass/common.scss */
+  /* line 462, ../sass/common.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -461,7 +490,7 @@ body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 465, ../sass/common.scss */
+/* line 491, ../sass/common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -469,7 +498,7 @@ body {
   *text-indent: -9999px;
 }
 
-/* line 472, ../sass/common.scss */
+/* line 498, ../sass/common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -477,13 +506,13 @@ body {
   height: 150%;
 }
 
-/* line 479, ../sass/common.scss */
+/* line 505, ../sass/common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 484, ../sass/common.scss */
+/* line 510, ../sass/common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -495,7 +524,7 @@ body {
   width: 1px;
 }
 
-/* line 496, ../sass/common.scss */
+/* line 522, ../sass/common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -506,24 +535,24 @@ body {
   width: auto;
 }
 
-/* line 505, ../sass/common.scss */
+/* line 531, ../sass/common.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 510, ../sass/common.scss */
+/* line 536, ../sass/common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 515, ../sass/common.scss */
+/* line 541, ../sass/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 519, ../sass/common.scss */
+/* line 545, ../sass/common.scss */
 .clearfix {
   *zoom: 1;
 }

@@ -9,8 +9,11 @@ get_header(); ?>
 
 	<div class="hexagon hexagon1">
 	    <div class="hexagon-in1">
-	        <div class="hexagon-in2" style="background-image: url(http://lorempixel.com/230/230);"><span class="hex-hover"></span></div>
-	        
+	    	<a href="">
+	        	<div class="hexagon-in2" style="background-image: url(http://lorempixel.com/230/230);">
+	        		<span class="hex-hover"></span>
+	        	</div>
+	    	</a>
 	    </div>
 	</div>
 
