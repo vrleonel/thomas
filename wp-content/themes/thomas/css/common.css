@@ -13,8 +13,8 @@
    ========================== */
 @font-face {
   font-family: 'vevey';
-  src: url("font/vevey.eot");
-  src: url("font/vevey.eot?#iefix") format("embedded-opentype"), url("font/vevey.woff") format("woff"), url("font/vevey.ttf") format("truetype"), url("font/vevey.svg#vevey") format("svg");
+  src: url("../font/vevey.eot");
+  src: url("../font/vevey.eot?#iefix") format("embedded-opentype"), url("../font/vevey.woff") format("woff"), url("../font/vevey.ttf") format("truetype"), url("../font/vevey.svg#vevey") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -170,7 +170,7 @@ nav ul {
 /* line 151, ../sass/common.scss */
 #navigator li {
   display: inline-block;
-  font: 18px "vevey";
+  font: 17px "vevey";
   text-transform: uppercase;
   letter-spacing: 2px;
 }
