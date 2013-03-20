@@ -6,8 +6,7 @@
 	<div id="footer">
 		<nav id="navigator">	
 			<ul class="left">
-				<li><a href="<?= home_url('/tatoo');?>">tatoo</a> </li>
-				<li><a href="#">art</a></li>
+				<li><a href="<?= home_url('/tatoo');?>">tatoo art</a> </li>
 				<li><a href="#">painting</a></li>
 				<li><a href="<?= home_url('/information');?>">information</a></li>
 				<li><a href="#">blog/news</a></li>
