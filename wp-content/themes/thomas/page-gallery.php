@@ -10,7 +10,10 @@ get_header(); ?>
 
 <?php
 global $post;
-$args = array(  'category' => 2, 'orderby' => 'post_date','order' => 'ASC', );
+$category_id = get_post_custom();
+
+$args = array(  'category' => $category_id["category"][0], 'orderby' => 'post_date','order' => 'ASC', );
+
 $myposts = get_posts( $args );
 foreach( $myposts as $post ) :	setup_postdata($post); ?>
   <?  $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); ?>

@@ -1,25 +1,50 @@
 <?php
-/**
- */
+/* Menu */
+$main_menu_args = array(
+	'theme_location'  => 'main-menu',
+	'container'       => 'div',
+	'menu_id'         => 'main-menu',
+	'menu_class'      => 'left',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
+
+$social_menu_args = array(
+	'theme_location'  => 'social-menu',
+	'container'       => 'div',
+	'menu_id'         => 'social-menu',
+	'menu_class'      => 'right social-links',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
+
 ?>
 	</div><!-- #main -->
 	<div id="footer">
 		<nav id="navigator">	
-			<ul class="left">
+			<!--ul class="left">
 				<li><a href="<?= home_url('/tatoo');?>">tatoo art</a> </li>
 				<li><a href="#">painting</a></li>
 				<li><a href="<?= home_url('/information');?>">information</a></li>
 				<li><a href="#">blog/news</a></li>
 				<li><a href="<?= home_url('/shop');?>">shop</a></li>
-			</ul>
-			
+			</ul-->
 
-			<ul class="right social-links">
+			<? wp_nav_menu( $main_menu_args ); ?>
+			<? wp_nav_menu( $social_menu_args ); ?>
+
+			<!-- <ul class="right social-links">
 				<li><a href="#">e-mail</a></li>
 				<li><a href="#">instagram</a> </li>
 				<li><a href="#">facebook</a></li>
 				<li><a href="#">tumblr</a></li>
-			</ul>
+			</ul> -->
 		</nav>
 	</div>
 </div><!-- #wrapper -->
