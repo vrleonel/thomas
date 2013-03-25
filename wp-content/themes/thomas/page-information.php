@@ -14,19 +14,22 @@ get_header(); ?>
 		</aside>
 		
 		<article>
-			<h4>My name is Thomas Hooper.</h4>
+			<?= get_field("description_text"); ?>
+
+			<!-- <h4>My name is Thomas Hooper.</h4>
 			<p>Thank you so much for visiting my website and looking at my work. 
 			I was born in Hastings East Sussex, studied tattooing at Good Karma under Jim Macairt, 
 			studied Drawing at The London Institute of Art & Design, subsequently moving from London 
 			to New York City to pursue my goals in Tattooing and Art.</p>
 
 			<p>I work out of Saved Tattoo in Brooklyn NY. <br>
-			Please contact me there at</p>
+			Please contact me there at</p> -->
 
 			<p class="adress"> 
-			<strong>SAVED TATTOO</strong><br>
+				<?= get_field("adress"); ?>
+			<!-- <strong>SAVED TATTOO</strong><br>
 			426 Union Avenue, Brooklyn, NY — (718) 486-0850 <br>
-			<a href="#">savedtattoo.com</a> 
+			<a href="#">savedtattoo.com</a>  -->
 		</p>
 		</article>
 	</section>
@@ -34,7 +37,8 @@ get_header(); ?>
 	<section class="information">
 		<div>
 			<article>
-				<h4 class="vv">Tattoo appointment information</h4>
+				<?= get_field("article_1")?>
+				<!-- <h4 class="vv">Tattoo appointment information</h4>
 				<p>
 				 I am currently not booking new clients for tattoo work. I am very grateful for the 
 				 people who want to get tattooed by myself and are willing to wait, without YOU / the client,
@@ -47,13 +51,14 @@ get_header(); ?>
 					If I don’t return your email please don’t hesitate to resend, they got lost quite easily, my 
 					current response time for emails is about 4-6 weeks as I handle all of this personally and it 
 					takes a long time to work my way through them between drawing and tattooing.
-				</p>
+				</p> -->
 			</article>
 			
 		
 			
 			<article>
-				<h4 class="vv">Biography</h4>
+				<?= get_field("article_2")?>
+				<!-- <h4 class="vv">Biography</h4>
 				<p>
 				I am currently not booking new clients for tattoo work. I am very grateful for 
 				the people who want to get tattooed by myself and are willing to wait, without 
@@ -67,13 +72,15 @@ get_header(); ?>
 				If I don’t return your email please don’t hesitate to resend, they got lost quite easily, 
 				my current response time for emails is about 4-6 weeks as I handle all of this personally 
 				and it takes a long time to work my way through them between drawing and tattooing.
-				</p>
+				</p> -->
 			</article>
 		</div>
 
 		<aside>
 			<h4 class="vv">more thomas</h4>
-			<article class="item-1">
+
+			<?= get_field("aside_articles") ?>
+			<!-- <article class="item-1">
 				<span class="ico"></span>
 				<h5>Residual Self-Image</h5>
 				<p>Personal exploration and some more describing what this is all about goes here.<br>
@@ -94,7 +101,7 @@ get_header(); ?>
 				<p>Limited series books and prints little description of this venture here.<br>
 					<a href="#">artifactpublishing.com</a>
 				</p>
-			</article>
+			</article> -->
 		</aside>
 	</section>
 

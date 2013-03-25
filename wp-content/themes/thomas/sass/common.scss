@@ -9,7 +9,7 @@ $font-type: 'vevey';
 /* ==========================
          Font face
    ========================== */
-   
+
 @font-face {
     font-family: 'vevey';
     src: url('../font/vevey.eot');
@@ -145,8 +145,9 @@ nav ul {
   bottom: 0;
   position: fixed;
   background: #000;
-  height: 35px;
+  /*height: 35px;*/
   padding-top:10px;
+  padding-bottom:10px;
 
 }
 #navigator li{
@@ -232,6 +233,9 @@ body{
 } 
 
 .page-information{
+  h4{
+    font-weight: normal
+  }
 
 }
 
@@ -250,6 +254,9 @@ body{
 
 .adress{
   font-size: 14px;
+  a{  
+    text-decoration: underline;
+  }
 }
 
 /* =====================================
@@ -257,6 +264,7 @@ body{
  ======================================= */
 .information{
   margin-top: 70px;
+  
 
   div{
     width: 45%;
@@ -274,33 +282,35 @@ body{
   aside{
     float: right;
     width: 45%;
-  }
+  
+    h4{
+      text-align: left;
+    }
+    h5{
+      font-style: italic;
+      font-size: 14px;
+    }
 
-  aside h5{
-    font-style: italic;
-    font-size: 14px;
-  }
 
+    .ico{
+      background: url(../img/sprite.png) 0px 0px no-repeat;
+      background-size: auto;
+      width: 70px;
+      height: 70px;
+      display: inline-block;
+      float:left;
+      margin:11px 22px 0 0;
+    }
+    p{
+      font-size: 12px;
+      margin-top: -22px;
+      margin-left: 92px;
 
-  aside .ico{
-    background: url(../img/sprite.png) 0px 0px no-repeat;
-    background-size: auto;
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    float:left;
-    margin:11px 22px 0 0;
-  }
-  aside p{
-    font-size: 12px;
-    margin-top: -22px;
-
-    margin-left: 92px;
-  }
-
-  aside p a{
-    font-size: 14px;
-    text-decoration: underline;
+      a{
+        font-size: 14px;
+        text-decoration: underline;
+      }
+    }
   }
 
   .item-1 .ico{ background-position: 0px -533px; }
