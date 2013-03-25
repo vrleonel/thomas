@@ -149,19 +149,18 @@ nav ul {
   padding-top:10px;
   padding-bottom:10px;
 
-}
-#navigator li{
+ li{
     display: inline-block;
     font: 17px "vevey";
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
 }
-
 
 nav a {
   color: #FFFFFF;
   text-transform: uppercase;
-  padding:10px;
+  padding:10px 15px;
 
 }
 
@@ -174,13 +173,11 @@ nav a:hover {
    color: #ff4900;
 }
 
-#navigator ul.social-links li a{
-  font-size: 13px;
-}
 
 #navigator ul.social-links li a{
+  font-size: 13px;
   border-left: 1px solid #686868;
-  padding: 15px 10px 15px 10px;
+  padding: 15px 10px 15px 20px;
   color:#686868;
 
 }
@@ -188,6 +185,7 @@ nav a:hover {
 
 .left{
   float: left;
+  margin-left: 15px;
 }
 
 .right{
