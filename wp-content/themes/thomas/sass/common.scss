@@ -162,6 +162,10 @@ nav a {
   color: #FFFFFF;
   text-transform: uppercase;
   padding:10px 15px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s; /* Firefox 4 */
+  -webkit-transition: all 0.7s; /* Safari and Chrome */
+  -o-transition: all 0.7s; /* Opera */
 
 }
 
