@@ -1,32 +1,57 @@
- // $(document).ready(function(){
+;(function(namespace, $){
+
+  var Gallery = {
+
+    init : function(){
+      //this.loading()
+    },
 
 
-	// $('a[name=modal]').click(function(e) {
-	// 	e.preventDefault();
-		
-	// 	var id = $(this).attr('href');
-	
-	// 	$.get(id, function(data){
-	// 		// create a modal dialog with the data
-	// 		$(data).modal({
-	// 			opacity:80,
-	// 	 		overlayCss: {backgroundColor:"#FFF"}
-	// 		});
-	// 	});
-	// });
+    loading: function(){
+      init = $.now();
+      console.log(0);
 
- //  });
 
-$(document).ready(function(){
-	$("#loading").fadeOut('normal', function(element) {
-    // Animation complete.
-    $("#wrapper").hide(0).delay(0).fadeIn(1000);
-  });
-	//$("#loading").hide(0).delay(100).fadeOut(2000);
-	//$("#wrapper").hide(0).delay(2000).fadeIn(2000);
-	 //$().ajaxStart(function() { $('#loading').show(); });
-  	 //$().ajaxStop(function() { $('#loading').hide(); });
-});
+      //alert('loading');
+
+    },
+
+    fade_page: function(){
+      console.log($.now()-init);
+      $("#loading").fadeOut('normal', function(element) {
+      $("#wrapper").hide(0).delay(0).fadeIn(1000);
+      });
+    }
+  }
+
+  $(document).ready(function(){ Gallery.loading() });
+
+  $(window).load(function(){ Gallery.fade_page()});
+
+})(window, jQuery);
+
+
+
+
+
+
+// $(document).ready(function(){
+// 	alert("ready");l
+//   $("#loading").fadeOut('normal', function(element) {
+//     // Animation complete.
+
+//     $("#wrapper").hide(0).delay(0).fadeIn(1000);
+
+//   });
+// 	//$("#loading").hide(0).delay(100).fadeOut(2000);
+// 	//$("#wrapper").hide(0).delay(2000).fadeIn(2000);
+// 	 //$().ajaxStart(function() { $('#loading').show(); });
+//   	 //$().ajaxStop(function() { $('#loading').hide(); });
+// });
+
+// $(window).load(function(){
+//     alert("teste");
+// });
 
  /*
  * SimpleModal Contact Form
@@ -46,7 +71,7 @@ $(document).ready(function(){
 // 				e.preventDefault();
 
 // 				url = $(this).attr('href');
-				
+
 // 				// load the contact form using ajax
 // 				$.get(url, function(data){
 // 					// create a modal dialog with the data
@@ -147,7 +172,7 @@ $(document).ready(function(){
 // 							height: '30px'
 // 						}, contact.showError);
 // 					}
-					
+
 // 				}
 // 			});
 // 		},
@@ -201,7 +226,7 @@ $(document).ready(function(){
 // 		validateEmail: function (email) {
 // 			var at = email.lastIndexOf("@");
 
-// 			// Make sure the at (@) sybmol exists and  
+// 			// Make sure the at (@) sybmol exists and
 // 			// it is not the first or last character
 // 			if (at < 1 || (at + 1) === email.length)
 // 				return false;
@@ -233,7 +258,7 @@ $(document).ready(function(){
 
 // 			// Make sure domain contains only valid characters and at least one period
 // 			if (!/^[-a-zA-Z0-9\.]*$/.test(domain) || domain.indexOf(".") === -1)
-// 				return false;	
+// 				return false;
 
 // 			return true;
 // 		},
