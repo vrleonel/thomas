@@ -38,7 +38,7 @@ $social_menu_args = array(
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.spritely.js"></script>
 <script src="<? bloginfo('template_directory');?>/js/plugins.js"></script>
-<script src="<? bloginfo('template_directory');?>/js/main.js"></script>
+<script src="<? bloginfo('template_directory');?>/js/main.js?1"></script>
 
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

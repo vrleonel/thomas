@@ -30,7 +30,7 @@ html, button, input, select, textarea {
 /* line 31, ../sass/common.scss */
 body {
   /*background: #adadad;*/
-  background: #000;
+  background: #FFF;
   font-size: 1em;
   line-height: 1.4;
   letter-spacing: 2px;
@@ -589,7 +589,7 @@ body {
   ============================*/
 /* line 579, ../sass/common.scss */
 #loading {
-  background: #000;
+  background: #FFF;
   position: absolute;
   top: 0;
   left: 0;
