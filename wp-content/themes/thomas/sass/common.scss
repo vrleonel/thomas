@@ -154,6 +154,7 @@ nav ul {
 
  li{
     display: inline-block;
+    zoom: 1;
     font: 17px "vevey";
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -235,7 +236,7 @@ body{
   min-width: 1000px;
   width: 100%;
   padding: 45px 0;
-} 
+}
 
 .page-information{
   h4{
@@ -259,7 +260,7 @@ body{
 
 .adress{
   font-size: 14px;
-  a{  
+  a{
     text-decoration: underline;
   }
 }
@@ -269,7 +270,7 @@ body{
  ======================================= */
 .information{
   margin-top: 70px;
-  
+
 
   div{
     width: 45%;
@@ -287,7 +288,7 @@ body{
   aside{
     float: right;
     width: 45%;
-  
+
     h4{
       text-align: left;
     }
@@ -303,6 +304,7 @@ body{
       width: 70px;
       height: 70px;
       display: inline-block;
+      zoom: 1;
       float:left;
       margin:11px 22px 0 0;
     }
@@ -382,6 +384,7 @@ body{
 
   span{
     display: inline-block;
+    zoom: 1;
     width: 42px;
     height: 52px;
   }
@@ -438,6 +441,7 @@ body{
 
     nav ul li {
         display: inline;
+        zoom:1;
     }
 
     .oldie nav a {
@@ -585,5 +589,15 @@ body{
   width: 100%;
   z-index: 1000;
 }
+#sprite{
 
+    background: transparent url(../img/loading-circle.png) 0 0 no-repeat;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 102px;
+    height: 102px;
+    z-index: 2000;
+
+}
 #wrapper{display: none;}

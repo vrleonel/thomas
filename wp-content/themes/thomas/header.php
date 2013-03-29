@@ -59,8 +59,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="loading"><div class="sprite">teste</div></div> 
+<div id="loading"><div id="sprite"></div></div>
 <div id="wrapper" class="hfeed">
 
 	<div id="main">
-	
+
