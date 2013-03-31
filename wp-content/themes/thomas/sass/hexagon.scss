@@ -1,4 +1,21 @@
 @import "mixins";
+
+/*================================
+    Font Face
+=================================*/
+
+@font-face {
+  font-family: Icons;
+  src: url('../font/diy-regular.eot?24&domain=diy.org');
+  src: url('../font/diy-regular.eot?24&domain=diy.org#iefix') format('embedded-opentype'), 
+       url('../font/diy-regular.ttf?24&domain=diy.org') format('truetype'), 
+       url('../font/diy-regular.woff?24&domain=diy.org') format('woff'), 
+       url('../font/diy-regular.svg?24&domain=diy.org#diyregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*==============================*/
 .hexagon {
     overflow: hidden;
     visibility: hidden;
@@ -22,6 +39,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 230px 230px;
 
     cursor:url(../img/zoom-ico.png),auto;
 
@@ -36,7 +54,9 @@
     -moz-transition: all 1s; /* Firefox 4 */
     -webkit-transition: all 1s; /* Safari and Chrome */
     -o-transition: all 1s; /* Opera */
-    }
+
+
+}
 .hexagon-in2:hover {
     -webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
     box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
@@ -78,4 +98,9 @@
     margin: -80px 5% 0 5%;
     display: inline-block;
     z-index: 1;
+}
+
+
+.hexa-font{
+    font-family: Icons;
 }

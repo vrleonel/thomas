@@ -5,7 +5,19 @@
   -pie-watch-ancestors: 2;
 }
 
-/* line 2, ../sass/hexagon.scss */
+/*================================
+    Font Face
+=================================*/
+@font-face {
+  font-family: Icons;
+  src: url("../font/diy-regular.eot?24&domain=diy.org");
+  src: url("../font/diy-regular.eot?24&domain=diy.org#iefix") format("embedded-opentype"), url("../font/diy-regular.ttf?24&domain=diy.org") format("truetype"), url("../font/diy-regular.woff?24&domain=diy.org") format("woff"), url("../font/diy-regular.svg?24&domain=diy.org#diyregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*==============================*/
+/* line 19, ../sass/hexagon.scss */
 .hexagon {
   overflow: hidden;
   visibility: hidden;
@@ -16,7 +28,7 @@
   cursor: pointer;
 }
 
-/* line 11, ../sass/hexagon.scss */
+/* line 28, ../sass/hexagon.scss */
 .hexagon-in1 {
   overflow: hidden;
   width: 100%;
@@ -27,12 +39,13 @@
   transform: rotate(-60deg);
 }
 
-/* line 20, ../sass/hexagon.scss */
+/* line 37, ../sass/hexagon.scss */
 .hexagon-in2 {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
+  background-size: 230px 230px;
   cursor: url(../img/zoom-ico.png), auto;
   /*background-image: url(http://lorempixel.com/230/230);*/
   visibility: visible;
@@ -49,13 +62,13 @@
   /* Opera */
 }
 
-/* line 40, ../sass/hexagon.scss */
+/* line 60, ../sass/hexagon.scss */
 .hexagon-in2:hover {
   -webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
   box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
 }
 
-/* line 45, ../sass/hexagon.scss */
+/* line 65, ../sass/hexagon.scss */
 .hex-hover {
   background: url(../img/sprite.png) -5px -750px no-repeat;
   position: relative;
@@ -74,7 +87,7 @@
   /* Opera */
 }
 
-/* line 61, ../sass/hexagon.scss */
+/* line 81, ../sass/hexagon.scss */
 .hexagon-in2:hover span {
   display: none;
 }
@@ -86,11 +99,16 @@
 
     display: inline-block;
     }*/
-/* line 75, ../sass/hexagon.scss */
+/* line 95, ../sass/hexagon.scss */
 .hexagon1 {
   width: 200px;
   height: 315px;
   margin: -80px 5% 0 5%;
   display: inline-block;
   z-index: 1;
+}
+
+/* line 104, ../sass/hexagon.scss */
+.hexa-font {
+  font-family: Icons;
 }
