@@ -17,6 +17,12 @@
 
  //  });
 
+$(document).ready(function(){
+	 $("#wrapper").hide(0).delay(200).fadeIn(3000);
+	 //$().ajaxStart(function() { $('#loading').show(); });
+  	 //$().ajaxStop(function() { $('#loading').hide(); });
+});
+
  /*
  * SimpleModal Contact Form
  * http://simplemodal.com
@@ -41,10 +47,12 @@ jQuery(function ($) {
 					// create a modal dialog with the data
 					$("#response_modal").html(data);
 					$("#response_modal #content").modal({
-						closeHTML: "<span class='close'><a href='#' title='Close' class='modal-close'></a></span>",
+						//closeHTML: "<span class='close'><a href='#' title='Close' class='modal-close'></a></span>",
+						closeClass: '.modal-close',
+						escClose: true,
 						position: ["0%",],
-						// overlayId: 'contact-overlay',
-						// containerId: 'contact-container',
+						overlayId: 'contact-overlay',
+						containerId: 'contact-container',
 						opacity:80,
 			 	 		overlayCss: {backgroundColor:"#000"},
 						onOpen: gallery.open,

@@ -564,3 +564,18 @@ body{
 .clearfix {
     *zoom: 1;
 }
+
+
+
+/* ==========================
+  Loading
+  ============================*/
+
+  #loading {
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+  display:none;
+}
+
+#wrapper{display: none;}

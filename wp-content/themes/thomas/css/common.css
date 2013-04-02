@@ -578,3 +578,19 @@ body {
 .clearfix {
   *zoom: 1;
 }
+
+/* ==========================
+  Loading
+  ============================*/
+/* line 574, ../sass/common.scss */
+#loading {
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+/* line 581, ../sass/common.scss */
+#wrapper {
+  display: none;
+}

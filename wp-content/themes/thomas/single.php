@@ -1,11 +1,11 @@
 <?php
-//get_header(); ?>
+get_header(); ?>
 
 <div id="content" class="single-gallery" role="main">
 
 	<div class="nav-links">
   	<span class="prev"><?= previous_post_link( "%link", "" , true); ?></span>
-  	<!--<span class="close"><a href="#" title="Close"></a></span>-->
+  	<span class="close"><a href="#" title="Close" class='modal-close'></a></span>
   	<span class="next"><?= next_post_link( '%link', '', true ); ?></span>
   	<div>Next</div>
   	<div>Prev</div>
@@ -25,4 +25,4 @@
 
 </div>
 
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
