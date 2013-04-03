@@ -571,11 +571,18 @@ body{
   Loading
   ============================*/
 
-  #loading {
+#loading {
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
   float: right;
   font-size: 10px;
   margin-right: 10px;
-  display:none;
+  display:block;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
 }
 
 #wrapper{display: none;}

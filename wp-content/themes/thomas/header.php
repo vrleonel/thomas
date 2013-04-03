@@ -54,11 +54,13 @@
 	 */
 	wp_head();
 ?>
+
+
 </head>
 
 <body <?php body_class(); ?>>
+<div id="loading"><div class="sprite">teste</div></div> 
 <div id="wrapper" class="hfeed">
 
 	<div id="main">
 	
-	<div id="loading">Loading...</div> 
