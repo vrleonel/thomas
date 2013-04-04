@@ -29,13 +29,14 @@ html, button, input, select, textarea {
 
 /* line 31, ../sass/common.scss */
 body {
-  background: #adadad;
+  /*background: #adadad;*/
+  background: #000;
   font-size: 1em;
   line-height: 1.4;
   letter-spacing: 2px;
 }
 
-/* line 38, ../sass/common.scss */
+/* line 39, ../sass/common.scss */
 hr {
   display: block;
   height: 1px;
@@ -45,24 +46,24 @@ hr {
   padding: 0;
 }
 
-/* line 47, ../sass/common.scss */
+/* line 48, ../sass/common.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 51, ../sass/common.scss */
+/* line 52, ../sass/common.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 57, ../sass/common.scss */
+/* line 58, ../sass/common.scss */
 textarea {
   resize: vertical;
 }
 
-/* line 61, ../sass/common.scss */
+/* line 62, ../sass/common.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -70,19 +71,19 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* line 68, ../sass/common.scss */
+/* line 69, ../sass/common.scss */
 h1 {
   font-family: "vevey";
   font-size: 80px;
 }
 
-/* line 73, ../sass/common.scss */
+/* line 74, ../sass/common.scss */
 h3 {
   font-family: "vevey";
   font-size: 30px;
 }
 
-/* line 77, ../sass/common.scss */
+/* line 78, ../sass/common.scss */
 h4 {
   font-size: 20px;
   margin: 0;
@@ -90,13 +91,13 @@ h4 {
   font-weight: normal;
 }
 
-/* line 84, ../sass/common.scss */
+/* line 85, ../sass/common.scss */
 a, a:active, a:link {
   color: #FFF;
   text-decoration: none;
 }
 
-/* line 88, ../sass/common.scss */
+/* line 89, ../sass/common.scss */
 a:hover {
   color: #ff4900;
 }
@@ -104,33 +105,33 @@ a:hover {
 /* ==============
     Commons
    ============== */
-/* line 95, ../sass/common.scss */
+/* line 96, ../sass/common.scss */
 .vv {
   font-family: 'vevey';
   letter-spacing: 2px;
 }
 
-/* line 100, ../sass/common.scss */
+/* line 101, ../sass/common.scss */
 .ls {
   letter-spacing: 2px;
 }
 
 /* ===== Initializr Styles ==================================================
    ========================================================================== */
-/* line 107, ../sass/common.scss */
+/* line 108, ../sass/common.scss */
 body {
   font: 16px "Times New Roman", Times, serif;
   line-height: 1.375em;
 }
 
-/* line 112, ../sass/common.scss */
+/* line 113, ../sass/common.scss */
 #main {
   text-align: center;
   color: #FFFFFF;
   padding: 0 20px;
 }
 
-/* line 119, ../sass/common.scss */
+/* line 120, ../sass/common.scss */
 .logo-h {
   background: url(../img/sprite.png) top center no-repeat;
   width: 373px;
@@ -141,7 +142,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 130, ../sass/common.scss */
+/* line 131, ../sass/common.scss */
 .vertical-bar {
   width: 6px;
   background: #FFF;
@@ -152,13 +153,13 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
-/* line 141, ../sass/common.scss */
+/* line 142, ../sass/common.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 145, ../sass/common.scss */
+/* line 146, ../sass/common.scss */
 #navigator {
   width: 100%;
   bottom: 0;
@@ -168,7 +169,7 @@ nav ul {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 154, ../sass/common.scss */
+/* line 155, ../sass/common.scss */
 #navigator li {
   display: inline-block;
   font: 17px "vevey";
@@ -176,7 +177,7 @@ nav ul {
   letter-spacing: 2px;
 }
 
-/* line 162, ../sass/common.scss */
+/* line 163, ../sass/common.scss */
 nav a {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -190,17 +191,17 @@ nav a {
   /* Opera */
 }
 
-/* line 173, ../sass/common.scss */
+/* line 174, ../sass/common.scss */
 nav a:visited {
   color: #FFFFFF;
 }
 
-/* line 178, ../sass/common.scss */
+/* line 179, ../sass/common.scss */
 nav a:hover {
   color: #ff4900;
 }
 
-/* line 183, ../sass/common.scss */
+/* line 184, ../sass/common.scss */
 #navigator ul.social-links li a {
   font-size: 13px;
   border-left: 1px solid #686868;
@@ -208,13 +209,13 @@ nav a:hover {
   color: #686868;
 }
 
-/* line 192, ../sass/common.scss */
+/* line 193, ../sass/common.scss */
 .left {
   float: left;
   margin-left: 15px;
 }
 
-/* line 197, ../sass/common.scss */
+/* line 198, ../sass/common.scss */
 .right {
   float: right;
 }
@@ -222,7 +223,7 @@ nav a:hover {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 204, ../sass/common.scss */
+/* line 205, ../sass/common.scss */
 body {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -231,7 +232,7 @@ body {
   background-size: cover;
 }
 
-/* line 214, ../sass/common.scss */
+/* line 215, ../sass/common.scss */
 #content {
   padding: 45px 0;
   /*width: 100%;
@@ -243,7 +244,7 @@ body {
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 225, ../sass/common.scss */
+/* line 226, ../sass/common.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -251,35 +252,35 @@ body {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 233, ../sass/common.scss */
+/* line 234, ../sass/common.scss */
 #content.page-gallery {
   min-width: 1000px;
   width: 100%;
   padding: 45px 0;
 }
 
-/* line 240, ../sass/common.scss */
+/* line 241, ../sass/common.scss */
 .page-information h4 {
   font-weight: normal;
 }
 
-/* line 248, ../sass/common.scss */
+/* line 249, ../sass/common.scss */
 .description aside {
   float: left;
   margin-right: 50px;
 }
 
-/* line 253, ../sass/common.scss */
+/* line 254, ../sass/common.scss */
 .description article {
   margin-top: 30px;
   margin-left: 50px;
 }
 
-/* line 259, ../sass/common.scss */
+/* line 260, ../sass/common.scss */
 .adress {
   font-size: 14px;
 }
-/* line 261, ../sass/common.scss */
+/* line 262, ../sass/common.scss */
 .adress a {
   text-decoration: underline;
 }
@@ -287,11 +288,11 @@ body {
 /* =====================================
         Information
  ======================================= */
-/* line 269, ../sass/common.scss */
+/* line 270, ../sass/common.scss */
 .information {
   margin-top: 70px;
 }
-/* line 273, ../sass/common.scss */
+/* line 274, ../sass/common.scss */
 .information div {
   width: 45%;
   float: left;
@@ -299,26 +300,26 @@ body {
   text-align: left;
   font-size: 14px;
 }
-/* line 281, ../sass/common.scss */
+/* line 282, ../sass/common.scss */
 .information article {
   text-align: left;
   font-size: 14px;
 }
-/* line 286, ../sass/common.scss */
+/* line 287, ../sass/common.scss */
 .information aside {
   float: right;
   width: 45%;
 }
-/* line 290, ../sass/common.scss */
+/* line 291, ../sass/common.scss */
 .information aside h4 {
   text-align: left;
 }
-/* line 293, ../sass/common.scss */
+/* line 294, ../sass/common.scss */
 .information aside h5 {
   font-style: italic;
   font-size: 14px;
 }
-/* line 299, ../sass/common.scss */
+/* line 300, ../sass/common.scss */
 .information aside .ico {
   background: url(../img/sprite.png) 0px 0px no-repeat;
   background-size: auto;
@@ -328,26 +329,26 @@ body {
   float: left;
   margin: 11px 22px 0 0;
 }
-/* line 308, ../sass/common.scss */
+/* line 309, ../sass/common.scss */
 .information aside p {
   font-size: 12px;
   margin-top: -22px;
   margin-left: 92px;
 }
-/* line 313, ../sass/common.scss */
+/* line 314, ../sass/common.scss */
 .information aside p a {
   font-size: 14px;
   text-decoration: underline;
 }
-/* line 320, ../sass/common.scss */
+/* line 321, ../sass/common.scss */
 .information .item-1 .ico {
   background-position: 0px -533px;
 }
-/* line 321, ../sass/common.scss */
+/* line 322, ../sass/common.scss */
 .information .item-2 .ico {
   background-position: 0px -605px;
 }
-/* line 322, ../sass/common.scss */
+/* line 323, ../sass/common.scss */
 .information .item-3 .ico {
   background-position: 0px -675px;
 }
@@ -355,31 +356,31 @@ body {
 /* =====================================
     Shop
  ======================================= */
-/* line 330, ../sass/common.scss */
+/* line 331, ../sass/common.scss */
 .page-shop h5 {
   font-size: 20px;
 }
-/* line 334, ../sass/common.scss */
+/* line 335, ../sass/common.scss */
 .page-shop section {
   display: block;
   margin: 0px 0 20px 0;
   font-size: 16px;
 }
-/* line 340, ../sass/common.scss */
+/* line 341, ../sass/common.scss */
 .page-shop aside {
   float: left;
   margin-right: 40px;
   vertical-align: center;
 }
-/* line 346, ../sass/common.scss */
+/* line 347, ../sass/common.scss */
 .page-shop article {
   padding-top: 50px;
 }
-/* line 350, ../sass/common.scss */
+/* line 351, ../sass/common.scss */
 .page-shop a {
   text-decoration: underline;
 }
-/* line 354, ../sass/common.scss */
+/* line 355, ../sass/common.scss */
 .page-shop .small {
   font-size: 0.875em;
   /*14/16*/
@@ -388,7 +389,7 @@ body {
 /* =====================================
     Single-gallery
  ======================================= */
-/* line 365, ../sass/common.scss */
+/* line 366, ../sass/common.scss */
 #content.single-gallery {
   min-width: 1000px;
   width: 100%;
@@ -396,36 +397,36 @@ body {
   margin: 0;
 }
 
-/* line 372, ../sass/common.scss */
+/* line 373, ../sass/common.scss */
 .single-gallery img {
   width: 100%;
   height: auto;
 }
 
-/* line 377, ../sass/common.scss */
+/* line 378, ../sass/common.scss */
 .nav-links {
   position: absolute;
   top: 50px;
   right: 50px;
 }
-/* line 382, ../sass/common.scss */
+/* line 383, ../sass/common.scss */
 .nav-links span {
   display: inline-block;
   width: 42px;
   height: 52px;
 }
-/* line 387, ../sass/common.scss */
+/* line 388, ../sass/common.scss */
 .nav-links a {
   background: url("../img/gallery-ico.png") top left no-repeat;
   display: block;
   width: 42px;
   height: 52px;
 }
-/* line 395, ../sass/common.scss */
+/* line 396, ../sass/common.scss */
 .nav-links .close a {
   background: url("../img/gallery-ico.png") top center no-repeat;
 }
-/* line 398, ../sass/common.scss */
+/* line 399, ../sass/common.scss */
 .nav-links .next a {
   background: url("../img/gallery-ico.png") top right no-repeat;
 }
@@ -433,7 +434,7 @@ body {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 408, ../sass/common.scss */
+/* line 409, ../sass/common.scss */
 #footer {
   height: 100px;
   clear: both;
@@ -446,12 +447,12 @@ body {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 426, ../sass/common.scss */
+  /* line 427, ../sass/common.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 430, ../sass/common.scss */
+  /* line 431, ../sass/common.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -459,12 +460,12 @@ body {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 438, ../sass/common.scss */
+  /* line 439, ../sass/common.scss */
   nav ul li {
     display: inline;
   }
 
-  /* line 442, ../sass/common.scss */
+  /* line 443, ../sass/common.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -473,7 +474,7 @@ body {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 454, ../sass/common.scss */
+  /* line 455, ../sass/common.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
@@ -484,7 +485,7 @@ body {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 464, ../sass/common.scss */
+  /* line 465, ../sass/common.scss */
   .title {
     float: left;
   }
@@ -492,13 +493,13 @@ body {
   /* ============
       WIDE: Main
      ============ */
-  /* line 476, ../sass/common.scss */
+  /* line 477, ../sass/common.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 481, ../sass/common.scss */
+  /* line 482, ../sass/common.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -512,7 +513,7 @@ body {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 510, ../sass/common.scss */
+/* line 511, ../sass/common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -520,7 +521,7 @@ body {
   *text-indent: -9999px;
 }
 
-/* line 517, ../sass/common.scss */
+/* line 518, ../sass/common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -528,13 +529,13 @@ body {
   height: 150%;
 }
 
-/* line 524, ../sass/common.scss */
+/* line 525, ../sass/common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 529, ../sass/common.scss */
+/* line 530, ../sass/common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -546,7 +547,7 @@ body {
   width: 1px;
 }
 
-/* line 541, ../sass/common.scss */
+/* line 542, ../sass/common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -557,24 +558,24 @@ body {
   width: auto;
 }
 
-/* line 550, ../sass/common.scss */
+/* line 551, ../sass/common.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 555, ../sass/common.scss */
+/* line 556, ../sass/common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 560, ../sass/common.scss */
+/* line 561, ../sass/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 564, ../sass/common.scss */
+/* line 565, ../sass/common.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -582,7 +583,7 @@ body {
 /* ==========================
   Loading
   ============================*/
-/* line 574, ../sass/common.scss */
+/* line 575, ../sass/common.scss */
 #loading {
   background: #000;
   position: absolute;
@@ -597,7 +598,7 @@ body {
   z-index: 1000;
 }
 
-/* line 588, ../sass/common.scss */
+/* line 589, ../sass/common.scss */
 #wrapper {
   display: none;
 }

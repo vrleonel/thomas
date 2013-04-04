@@ -18,7 +18,7 @@
 
     fade_page: function(){
       console.log($.now()-init);
-      $("#loading").fadeOut('normal', function(element) {
+      $("#loading").delay(500).fadeOut('normal', function(element) {
       $("#wrapper").hide(0).delay(0).fadeIn(1000);
       });
     }

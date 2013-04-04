@@ -1,15 +1,18 @@
 <?php
-get_header(); ?>
+	get_header(); 
+
+	$cat = get_categories();
+?>
 
 <div id="content" class="single-gallery" role="main">
 
 	<div class="nav-links">
   	<span class="prev"><?= previous_post_link( "%link", "" , true); ?></span>
-  	<span class="close"><a href="#" title="Close" class='modal-close'></a></span>
+  	<span class="close"><a href="<?=get_home_url() . '/' . $cat[1]->slug ?>" title="Close" ></a></span>
   	<span class="next"><?= next_post_link( '%link', '', true ); ?></span>
-  	<div>Next</div>
-  	<div>Prev</div>
-  	<div>Close</div>
+  	<div id="next-label">Next</div>
+  	<div id="prev-label">Prev</div>
+  	<div id="close-label">Close</div>
 	</div>
 
   <?php
