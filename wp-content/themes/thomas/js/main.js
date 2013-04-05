@@ -5,19 +5,14 @@
     },
 
     loading: function(){
-      // init = $.now();
-      // console.log(0);
-      // sp_height = $("#sprite").height();
-      // sp_width  = $("#sprite").width();
+      $('#sprite').sprite({fps: 8, no_of_frames: 8, dir: 'left'})
+    },
 
-      // $('#sprite').css('top',($(window).height()/2 - sp_height) ).css('left',($(window).width()/2 - sp_width));
-      $('#sprite').sprite({fps: 8, no_of_frames: 8})
-
-
+    fadein_unload: function(e){
+      $("#loading").show().fadeIn(500);
     },
 
     fade_page: function(){
-      // console.log($.now()-init);
       $("#wrapper").hide(0).delay(0).fadeIn(1000);
       $("#loading").delay(2000).fadeOut(1000, function(element) {
 
@@ -31,12 +26,12 @@
 			NavLinks.hide_label();
 			nav_text = $(this).attr('rel');
 			NavLinks.show_label(nav_text)
-			
-			
+
+
 		}, function(){
 			NavLinks.hide_label();
 		});
-    },
+  },
 
 
     show_label: function(nav_text){
@@ -49,13 +44,19 @@
     }
   }
 
-
-
-  $(document).ready(function(){ 
-  	Gallery.loading() 
+  $(document).ready(function(){
+  	Gallery.loading()
   	NavLinks.init();
   });
-  $(window).load(function(){ Gallery.fade_page()});
+
+  $(window).unload(function(){
+     Gallery.fadein_unload(this);
+  });
+
+  $(window).load(function(){
+    Gallery.fade_page();
+  });
+
 
 })(window, jQuery);
 

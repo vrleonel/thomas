@@ -15,11 +15,11 @@
 
 get_header(); ?>
 
-<div id="content" role="main">
+<div id="content" class="page-home" role="main">
 
     <h1 class="logo-h"></h1>
 
-    <h3 class="vv"><?= get_field("title_home")?></h3>
+    <h3 class="vv title-home"><?= get_field("title_home")?></h3>
 
     <div class="vertical-bar"></div>
 

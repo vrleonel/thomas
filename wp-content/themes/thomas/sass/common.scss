@@ -24,19 +24,29 @@ $font-type: 'vevey';
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+html{
+  background: url(../img/bg.jpg) #000 no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 html, button, input, select, textarea {
     color: #222;
 }
 
-
 body {
-    /*background: #adadad;*/
-    background: #000;
-    font-size: 1em;
-    line-height: 1.4;
-    letter-spacing: 2px;
 
+
+
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font: 16px "Times New Roman", Times, serif;
+  line-height: 1.375em;
 }
+
 
 hr {
     display: block;
@@ -76,6 +86,7 @@ h1{
 h3{
   font-family: "vevey";
   font-size: 30px;
+  font-weight: normal;
 }
 h4{
   font-size:20px;
@@ -105,12 +116,10 @@ a:hover{
 }
 
 
-/* ===== Initializr Styles ==================================================
-   ========================================================================== */
-body {
-    font: 16px "Times New Roman", Times, serif;
-    line-height: 1.375em;
-}
+/* ==========================================================================
+    Initializr Styles
+========================================================================== */
+
 
 #main{
   text-align: center;
@@ -127,6 +136,7 @@ body {
   text-indent: 100%;
   overflow: hidden;
   margin: 0 auto;
+  margin-top: 10%;
 }
 .logo-v{}
 
@@ -135,10 +145,24 @@ body {
   background: #FFF;
   height: 157px;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* ==============
-    MOBILE: Menu
+    Main
+   ============== */
+
+#content{
+  padding: 45px 0;
+  /*width: 100%;
+  min-width: 1000px;*/
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* ==============
+    Menu
    ============== */
 
 nav ul {
@@ -202,26 +226,7 @@ nav a:hover {
   float: right;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
-body{
-  background: url(../img/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#main {
 
-}
-#content{
-  padding: 45px 0;
-  /*width: 100%;
-  min-width: 1000px;*/
-  width: 1000px;
-  margin: 0 auto;
-}
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -233,7 +238,9 @@ body{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+#content.page-home{
+  padding:0;
+}
 #content.page-gallery{
   min-width: 1000px;
   width: 100%;
