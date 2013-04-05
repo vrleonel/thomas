@@ -101,14 +101,15 @@
     }*/
 /* line 95, ../sass/hexagon.scss */
 .hexagon1 {
-  width: 200px;
+  width: 15%;
+  max-width: 200px;
   height: 315px;
-  margin: -80px 5% 0 5%;
+  margin: -80px 2% 0 2%;
   display: inline-block;
   z-index: 1;
 }
 
-/* line 104, ../sass/hexagon.scss */
+/* line 105, ../sass/hexagon.scss */
 .hexa-font {
   font-family: Icons;
 }

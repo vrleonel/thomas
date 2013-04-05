@@ -28,12 +28,14 @@ html, button, input, select, textarea {
     color: #222;
 }
 
+
 body {
     /*background: #adadad;*/
-    background: #FFF;
+    background: #000;
     font-size: 1em;
     line-height: 1.4;
     letter-spacing: 2px;
+
 }
 
 hr {
@@ -402,6 +404,11 @@ body{
   .next a{
      background: url("../img/gallery-ico.png") top right no-repeat;
   }
+
+  .nav-label{
+    display: none;
+    text-transform: lowercase;
+  }
  }
 
 
@@ -577,8 +584,8 @@ body{
   ============================*/
 
 #loading {
-  background: #FFF;
-  position: absolute;
+  background: #000;
+  position: fixed;
   top: 0;
   left: 0;
   float: right;

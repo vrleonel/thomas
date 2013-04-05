@@ -25,7 +25,36 @@
     }
   }
 
-  $(document).ready(function(){ Gallery.loading() });
+  var NavLinks = {
+    init : function(){
+		$(".nav-links a").hover(function(){
+			NavLinks.hide_label();
+			nav_text = $(this).attr('rel');
+			NavLinks.show_label(nav_text)
+			
+			
+		}, function(){
+			NavLinks.hide_label();
+		});
+    },
+
+
+    show_label: function(nav_text){
+    	$(".nav-label").hide();
+    	$(".nav-label").text(nav_text).fadeIn(100);
+    },
+
+    hide_label: function(){
+    	$(".nav-label").text('').fadeOut(100);
+    }
+  }
+
+
+
+  $(document).ready(function(){ 
+  	Gallery.loading() 
+  	NavLinks.init();
+  });
   $(window).load(function(){ Gallery.fade_page()});
 
 })(window, jQuery);

@@ -8,11 +8,9 @@
 
 	<div class="nav-links">
   	<span class="prev"><?= previous_post_link( "%link", "" , true); ?></span>
-  	<span class="close"><a href="<?=get_home_url() . '/' . $cat[1]->slug ?>" title="Close" ></a></span>
+  	<span class="close"><a href="<?=get_home_url() . '/' . $cat[1]->slug ?>" title="Close" rel="Close" ></a></span>
   	<span class="next"><?= next_post_link( '%link', '', true ); ?></span>
-  	<div id="next-label">Next</div>
-  	<div id="prev-label">Prev</div>
-  	<div id="close-label">Close</div>
+  	<div class="nav-label"></div>
 	</div>
 
   <?php

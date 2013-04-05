@@ -16,7 +16,19 @@ $args = array(  'category' => $category_id["category"][0], 'orderby' => 'post_da
 
 $myposts = get_posts( $args );
 foreach( $myposts as $post ) :	setup_postdata($post); ?>
-  <?  $image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); ?>
+
+<?  
+	if(has_post_thumbnail($post->ID) == true){
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); 
+	}else{
+		$args = array( 'post_type' => 'attachment',
+   								 'numberposts' => -1,
+   								 'post_status' => null,
+   								 'post_parent' => $post->ID );
+		$attachments = get_posts($args);
+		$image_url = wp_get_attachment_image_src( $attachments[0]->ID, array(230,230) ); 
+	}
+  //$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); ?>
   <div class="hexagon hexagon1">
       <div class="hexagon-in1">
       	<a id="tattoo-<?=$post->ID?>" name="modal" href="<?php the_permalink(); ?>">
