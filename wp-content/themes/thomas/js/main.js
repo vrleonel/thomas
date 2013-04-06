@@ -26,7 +26,7 @@
 			NavLinks.hide_label();
 			nav_text = $(this).attr('rel');
 			NavLinks.show_label(nav_text);
-			
+
 			}, function(){
 				NavLinks.hide_label();
 			});
@@ -47,16 +47,58 @@
   			e.preventDefault();
   			href = $(this).attr("href");
  				$("#loading").fadeIn(1000, function(){
- 					window.location = href;	
+ 					window.location = href;
  				})
   		})
   	}
 
   }
 
+  var ScrollMouse = {
+
+    init: function(){
+      scroll_move = window.pageYOffset || document.documentElement.scrollTop;
+
+      function scrollUp(){
+        scroll_move = ((scroll_move - 500) < 0) ? 0 : scroll_move - 500 ;
+        $('html, body').animate({ scrollTop: scroll_move }, 500);
+      }
+      function scrollDown(){
+        scroll_max  = $('html, body').height() - $(window).height();
+        scroll_move = ((scroll_move + 500) > scroll_max) ? scroll_max : scroll_move + 500;
+        $('html, body').animate({ scrollTop: scroll_move }, 500);
+      }
+
+      $(".scroll-down").on({
+        mouseover: function(){
+          scrollDown();
+        },
+        click: function() {
+          scrollDown();
+        }
+      });
+
+      $(".scroll-up").on({
+        mouseover: function(){
+          scrollUp();
+        },
+        click: function() {
+          scrollUp();
+        }
+      });
+
+      $(document).scroll(function(){
+        scroll_move = window.pageYOffset || document.documentElement.scrollTop;
+      });
+    },
+
+
+  }
+
 
   $(document).ready(function(){
   	LoadingLinks.init();
+    ScrollMouse.init();
   	Gallery.loading();
   	NavLinks.init();
   });

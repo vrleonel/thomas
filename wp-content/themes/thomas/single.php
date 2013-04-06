@@ -1,5 +1,5 @@
 <?php
-	get_header(); 
+	get_header();
 
 	$cat = get_categories();
 ?>
@@ -14,13 +14,15 @@
 	</div>
 
   <?php
-    if (have_posts()) : while (have_posts()) : the_post(); 
+    if (have_posts()) : while (have_posts()) : the_post();
     ?>
-    
+
+    <span class="scroll-up"></span>
+    <span class="scroll-down"></span>
 		<div class="post-gallery">
 		    <?php the_content(); ?>
 		</div>
-   
+
 
   <?php endwhile; else: endif; ?>
 
