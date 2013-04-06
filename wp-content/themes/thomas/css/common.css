@@ -355,6 +355,7 @@ nav a:hover {
   height: 20%;
   position: fixed;
   top: 0;
+  left: 0;
   background: #333;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -365,6 +366,7 @@ nav a:hover {
   height: 25%;
   position: fixed;
   bottom: 0;
+  left: 0;
   background: #333;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
