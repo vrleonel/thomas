@@ -55,44 +55,46 @@
   }
 
   var ScrollMouse = {
-
+    move: window.pageYOffset || document.documentElement.scrollTop,
     init: function(){
-      scroll_move = window.pageYOffset || document.documentElement.scrollTop;
-
-      function scrollUp(){
-        scroll_move = ((scroll_move - 500) < 0) ? 0 : scroll_move - 500 ;
-        $('html, body').animate({ scrollTop: scroll_move }, 500);
-      }
-      function scrollDown(){
-        scroll_max  = $('html, body').height() - $(window).height();
-        scroll_move = ((scroll_move + 500) > scroll_max) ? scroll_max : scroll_move + 500;
-        $('html, body').animate({ scrollTop: scroll_move }, 500);
-      }
 
       $(".scroll-down").on({
         mouseover: function(){
-          scrollDown();
+          ScrollMouse.down();
         },
         click: function() {
-          scrollDown();
+         ScrollMouse.down();
         }
       });
 
       $(".scroll-up").on({
         mouseover: function(){
-          scrollUp();
+          ScrollMouse.up();
         },
         click: function() {
-          scrollUp();
+          ScrollMouse.up();
         }
       });
 
-      $(document).scroll(function(){
-        scroll_move = window.pageYOffset || document.documentElement.scrollTop;
-      });
+      ScrollMouse.scrolling();
     },
 
+    up: function(){
+      ScrollMouse.move = ((ScrollMouse.move - 500) < 0) ? 0 : ScrollMouse.move - 500 ;
+      $('html, body').animate({ scrollTop: ScrollMouse.move }, 500);
+    },
 
+    down: function(){
+      scroll_max  = $('html, body').height() - $(window).height();
+      ScrollMouse.move = ((ScrollMouse.move + 500) > scroll_max) ? scroll_max : ScrollMouse.move + 500;
+      $('html, body').animate({ scrollTop: ScrollMouse.move }, 500);
+    },
+
+    scrolling: function(){
+      $(document).scroll(function(){
+        ScrollMouse.move = window.pageYOffset || document.documentElement.scrollTop;
+      });
+    }
   }
 
 

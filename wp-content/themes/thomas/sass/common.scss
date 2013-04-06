@@ -387,6 +387,7 @@ nav a:hover {
     top:0;
     background: #CCC;
     @include opacity(0.1);
+    position: 20;
   }
   .scroll-down{
     width: 100%;
@@ -395,6 +396,7 @@ nav a:hover {
     bottom: 0;
     background: #CCC;
     @include opacity(0.1);
+    position: 20;
   }
  }
 
@@ -407,12 +409,14 @@ nav a:hover {
   position: absolute;
   top:50px;
   right: 50px;
+  z-index: 50;
 
   span{
     display: inline-block;
     zoom: 1;
     width: 42px;
     height: 52px;
+
   }
   a{
 

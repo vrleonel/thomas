@@ -412,8 +412,9 @@ nav a:hover {
   background: #CCC;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   opacity: 0.1;
+  position: 20;
 }
-/* line 391, ../sass/common.scss */
+/* line 392, ../sass/common.scss */
 .single-gallery .scroll-down {
   width: 100%;
   height: 25%;
@@ -422,43 +423,45 @@ nav a:hover {
   background: #CCC;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   opacity: 0.1;
+  position: 20;
 }
 
-/* line 401, ../sass/common.scss */
+/* line 403, ../sass/common.scss */
 .single-gallery img {
   width: 100%;
   height: auto;
 }
 
-/* line 406, ../sass/common.scss */
+/* line 408, ../sass/common.scss */
 .nav-links {
   position: absolute;
   top: 50px;
   right: 50px;
+  z-index: 50;
 }
-/* line 411, ../sass/common.scss */
+/* line 414, ../sass/common.scss */
 .nav-links span {
   display: inline-block;
   zoom: 1;
   width: 42px;
   height: 52px;
 }
-/* line 417, ../sass/common.scss */
+/* line 421, ../sass/common.scss */
 .nav-links a {
   background: url("../img/gallery-ico.png") top left no-repeat;
   display: block;
   width: 42px;
   height: 52px;
 }
-/* line 425, ../sass/common.scss */
+/* line 429, ../sass/common.scss */
 .nav-links .close a {
   background: url("../img/gallery-ico.png") top center no-repeat;
 }
-/* line 428, ../sass/common.scss */
+/* line 432, ../sass/common.scss */
 .nav-links .next a {
   background: url("../img/gallery-ico.png") top right no-repeat;
 }
-/* line 432, ../sass/common.scss */
+/* line 436, ../sass/common.scss */
 .nav-links .nav-label {
   display: none;
   text-transform: lowercase;
@@ -467,7 +470,7 @@ nav a:hover {
 /* ==========================================================================
    Footer
    ========================================================================== */
-/* line 443, ../sass/common.scss */
+/* line 447, ../sass/common.scss */
 #footer {
   height: 42px;
   clear: both;
@@ -480,12 +483,12 @@ nav a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 461, ../sass/common.scss */
+  /* line 465, ../sass/common.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
-  /* line 465, ../sass/common.scss */
+  /* line 469, ../sass/common.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -493,13 +496,13 @@ nav a:hover {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 473, ../sass/common.scss */
+  /* line 477, ../sass/common.scss */
   nav ul li {
     display: inline;
     zoom: 1;
   }
 
-  /* line 478, ../sass/common.scss */
+  /* line 482, ../sass/common.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -508,7 +511,7 @@ nav a:hover {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 490, ../sass/common.scss */
+  /* line 494, ../sass/common.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
@@ -519,7 +522,7 @@ nav a:hover {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 500, ../sass/common.scss */
+  /* line 504, ../sass/common.scss */
   .title {
     float: left;
   }
@@ -527,13 +530,13 @@ nav a:hover {
   /* ============
       WIDE: Main
      ============ */
-  /* line 512, ../sass/common.scss */
+  /* line 516, ../sass/common.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
-  /* line 517, ../sass/common.scss */
+  /* line 521, ../sass/common.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -547,7 +550,7 @@ nav a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 546, ../sass/common.scss */
+/* line 550, ../sass/common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -555,7 +558,7 @@ nav a:hover {
   *text-indent: -9999px;
 }
 
-/* line 553, ../sass/common.scss */
+/* line 557, ../sass/common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -563,13 +566,13 @@ nav a:hover {
   height: 150%;
 }
 
-/* line 560, ../sass/common.scss */
+/* line 564, ../sass/common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 565, ../sass/common.scss */
+/* line 569, ../sass/common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -581,7 +584,7 @@ nav a:hover {
   width: 1px;
 }
 
-/* line 577, ../sass/common.scss */
+/* line 581, ../sass/common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -592,24 +595,24 @@ nav a:hover {
   width: auto;
 }
 
-/* line 586, ../sass/common.scss */
+/* line 590, ../sass/common.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 591, ../sass/common.scss */
+/* line 595, ../sass/common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 596, ../sass/common.scss */
+/* line 600, ../sass/common.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 600, ../sass/common.scss */
+/* line 604, ../sass/common.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -617,7 +620,7 @@ nav a:hover {
 /* ==========================
   Loading
   ============================*/
-/* line 610, ../sass/common.scss */
+/* line 614, ../sass/common.scss */
 #loading {
   background: #000;
   position: fixed;
@@ -632,7 +635,7 @@ nav a:hover {
   z-index: 1000;
 }
 
-/* line 623, ../sass/common.scss */
+/* line 627, ../sass/common.scss */
 #sprite {
   background: transparent url(../img/loading-circle.png) 0 0 no-repeat;
   position: absolute;
@@ -643,7 +646,7 @@ nav a:hover {
   z-index: 2000;
 }
 
-/* line 634, ../sass/common.scss */
+/* line 638, ../sass/common.scss */
 #wrapper {
   display: none;
 }
