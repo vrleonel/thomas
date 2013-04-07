@@ -130,6 +130,16 @@ a:hover {
   margin-top: 10%;
 }
 
+.logo-v {
+  background: url(../img/sprite.png) -4px -105px no-repeat;
+  width: 97px;
+  height: 420px;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  z-index: 10;
+}
+
 .vertical-bar {
   width: 6px;
   background: #FFF;

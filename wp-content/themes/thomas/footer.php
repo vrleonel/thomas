@@ -25,6 +25,7 @@ $social_menu_args = array(
 );
 
 ?>
+  <div class="logo-v">&nbsp;</div>
   </div><!-- #main -->
   <div id="footer">
     <nav id="navigator">
