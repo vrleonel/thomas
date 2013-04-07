@@ -5,7 +5,7 @@
     },
 
     loading: function(){
-      $('#sprite').sprite({fps: 8, no_of_frames: 8, dir: 'left'});
+      $('#sprite').sprite({fps: 15, no_of_frames: 39, dir: 'left'});
     },
 
     fadein_unload: function(e){
@@ -101,19 +101,19 @@
     init: function(){
 
       $(".scroll-down").on({
-        mouseenter: function(e){
+        mouseenter: function(){
           Scroll.down();
         },
-        mouseleave: function(e){
+        mouseleave: function(){
           Scroll.stop();
         }
       });
 
       $(".scroll-up").on({
-        mouseenter: function(e){
+        mouseenter: function(){
           Scroll.up();
         },
-         mouseleave: function(e){
+         mouseleave: function(){
           Scroll.stop();
         }
       });
@@ -122,10 +122,7 @@
     up: function(){
       $(".scroll-up").animate( {opacity: 0.3}, 100 );
       scroll_max  = $('html, body').height() - $(window).height();
-      //console.log(Scroll.actual());
-
       $('html, body').animate({ scrollTop: 0 }, Scroll.actual());
-
     },
 
     down: function(){

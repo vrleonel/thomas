@@ -557,12 +557,12 @@ nav a:hover {
 }
 
 #sprite {
-  background: transparent url(../img/loading-circle.png) 0 0 no-repeat;
+  background: transparent url(../img/loading-all.png) 0 0 no-repeat;
   position: absolute;
   top: 40%;
   left: 45%;
-  width: 102px;
-  height: 102px;
+  width: 132px;
+  height: 140px;
   z-index: 2000;
 }
 
