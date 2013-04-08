@@ -116,7 +116,8 @@ a:hover {
 #main {
   text-align: center;
   color: #FFFFFF;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
+  padding: 0 0px;
 }
 
 .logo-h {
@@ -135,8 +136,8 @@ a:hover {
   width: 97px;
   height: 420px;
   position: fixed;
-  top: 20%;
-  left: 10%;
+  top: 25%;
+  left: 7%;
   z-index: 10;
 }
 
@@ -176,6 +177,7 @@ nav ul {
   /*height: 35px;*/
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 10;
 }
 #navigator li {
   display: inline-block;
@@ -240,6 +242,7 @@ nav a:hover {
   min-width: 1000px;
   width: 100%;
   padding: 45px 0;
+  overflow: hidden;
 }
 
 .page-information h4 {
@@ -567,7 +570,7 @@ nav a:hover {
 }
 
 #sprite {
-  background: transparent url(../img/loading-all.png) 0 0 no-repeat;
+  background: transparent url(../img/loading-sprite.png) 0 0 no-repeat;
   position: absolute;
   top: 40%;
   left: 45%;

@@ -7,28 +7,28 @@ get_header(); ?>
 
 <div id="content" class="page-gallery" role="main">
 
-
 <?php
-global $post;
-$category_id = get_post_custom();
+  global $post;
+  $category_id = get_post_custom();
+  $args = array( 'posts_per_page'  => -1, 'numberposts' => -1, 'category' => $category_id["category"][0], 'orderby' => 'post_date','order' => 'ASC', );
+  $myposts = get_posts( $args );
+  $count = 0;
+  foreach( $myposts as $post ) :	setup_postdata($post);
+    $count++;
+?>
 
-$args = array(  'category' => $category_id["category"][0], 'orderby' => 'post_date','order' => 'ASC', );
-
-$myposts = get_posts( $args );
-foreach( $myposts as $post ) :	setup_postdata($post); ?>
-
-<?  
+  <?
 	if(has_post_thumbnail($post->ID) == true){
-		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); 
+		$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) );
 	}else{
 		$args = array( 'post_type' => 'attachment',
    								 'numberposts' => -1,
    								 'post_status' => null,
    								 'post_parent' => $post->ID );
 		$attachments = get_posts($args);
-		$image_url = wp_get_attachment_image_src( $attachments[0]->ID, array(230,230) ); 
+		$image_url = wp_get_attachment_image_src( $attachments[0]->ID, array(230,230) );
 	}
-  //$image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(230,230) ); ?>
+  ?>
   <div class="hexagon hexagon1">
       <div class="hexagon-in1">
       	<a id="tattoo-<?=$post->ID?>" name="modal" href="<?php the_permalink(); ?>">
@@ -38,8 +38,14 @@ foreach( $myposts as $post ) :	setup_postdata($post); ?>
       	</a>
       </div>
   </div>
-<?php endforeach; ?>
+
+
+  <?
+    if($count  == 5){ echo '<br>'; }
+    elseif($count == 9){ $count = 0; echo '<br>'; }
+  ?>
+
+  <?php endforeach; ?>
 
 </div>
-<div id="response_modal" class="modal hide fade" style="display:none"></div>
 <?php get_footer(); ?>

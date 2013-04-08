@@ -5,7 +5,7 @@
     },
 
     loading: function(){
-      $('#sprite').sprite({fps: 15, no_of_frames: 39, dir: 'left'});
+      $('#sprite').sprite({fps: 8, no_of_frames: 13, dir: 'left'});
     },
 
     fadein_unload: function(e){
