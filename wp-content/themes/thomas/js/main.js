@@ -25,15 +25,12 @@
 		$(".nav-links a").hover(function(){
 			NavLinks.hide_label();
 			nav_text = $(this).attr('rel');
-			NavLinks.show_label(nav_text)
-
-
-		}, function(){
-			NavLinks.hide_label();
-		});
-  },
-
-
+			NavLinks.show_label(nav_text);
+			
+			}, function(){
+				NavLinks.hide_label();
+			});
+  	},
     show_label: function(nav_text){
     	$(".nav-label").hide();
     	$(".nav-label").text(nav_text).fadeIn(100);
@@ -44,8 +41,23 @@
     }
   }
 
+  var LoadingLinks = {
+  	init: function(){
+  		$("a").click(function(e){
+  			e.preventDefault();
+  			href = $(this).attr("href");
+ 				$("#loading").fadeIn(1000, function(){
+ 					window.location = href;	
+ 				})
+  		})
+  	}
+
+  }
+
+
   $(document).ready(function(){
-  	Gallery.loading()
+  	LoadingLinks.init();
+  	Gallery.loading();
   	NavLinks.init();
   });
 
