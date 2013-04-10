@@ -97,10 +97,48 @@
     }
   }
 
+  var Scroll = {
+  	init: function(){
+  		$(".scroll-down").on({
+        mouseenter: function(e){
+          Scroll.down();
+        },
+        mouseleave: function(e){
+          Scroll.stop();
+        }
+      });
+
+      $(".scroll-up").on({
+        mouseenter: function(e){
+          Scroll.up();
+        },
+         mouseleave: function(e){
+          Scroll.stop();
+        }
+      });
+  	},
+  	up: function(){
+  		$(".scroll-up").animate( {opacity: .5}, 100 );
+  		$('html, body').animate({ scrollTop: 0 }, 1000);
+  	},
+
+  	down: function(){
+  		$(".scroll-down").animate( {opacity: .5}, 100 );
+  		scroll_max  = $('html, body').height() - $(window).height();
+  		$('html, body').animate({ scrollTop: scroll_max }, 1000);
+  	},
+
+  	stop: function(){
+  		$(".scroll-down, .scroll-up").animate( {opacity: 0}, 100 );
+  		$('html, body').stop();
+  	}
+
+  }
+
 
   $(document).ready(function(){
   	LoadingLinks.init();
-    ScrollMouse.init();
+    Scroll.init();
   	Gallery.loading();
   	NavLinks.init();
   });
