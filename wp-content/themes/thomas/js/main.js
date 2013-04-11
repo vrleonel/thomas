@@ -101,7 +101,7 @@
     init: function(){
 
       //img.next()
-        
+
       $(".scroll-down").on({
         mouseenter: function(){
           Scroll.down();
@@ -147,8 +147,45 @@
     }
   };
 
+
+/** Loading via AJAX **/
+  var LoadGallery = {
+    init: function(){
+      $("a[rel='modal']").click(function(e){
+        e.preventDefault();
+
+        href = $(this).attr('href');
+
+        Gallery.fadein_unload();
+        $("#loading").css("opacity", ".80");
+        $("#main").fadeOut(1000, function(){
+          $("#main").load(href + " .single-gallery", function(e){
+
+            $("#main").append("<div class='temp'></div>")
+            $(".temp").html(e);
+            console.log($(".temp"));
+
+            $("#main").fadeIn(1500);
+            $("#loading").delay(1000).fadeOut(2000);
+
+            //debugger;
+          }).delay(1000);
+        });
+
+
+
+      });
+    }
+  };
+
+
+
+
+/**** INICIAR *****/
+
   $(document).ready(function(){
-    LoadingLinks.init();
+    //LoadingLinks.init();
+    LoadGallery.init();
     Scroll.init();
     Gallery.loading();
     NavLinks.init();

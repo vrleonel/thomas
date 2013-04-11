@@ -7,9 +7,9 @@
 @font-face {
   font-family: Icons;
   src: url('../font/diy-regular.eot?24&domain=diy.org');
-  src: url('../font/diy-regular.eot?24&domain=diy.org#iefix') format('embedded-opentype'), 
-       url('../font/diy-regular.ttf?24&domain=diy.org') format('truetype'), 
-       url('../font/diy-regular.woff?24&domain=diy.org') format('woff'), 
+  src: url('../font/diy-regular.eot?24&domain=diy.org#iefix') format('embedded-opentype'),
+       url('../font/diy-regular.ttf?24&domain=diy.org') format('truetype'),
+       url('../font/diy-regular.woff?24&domain=diy.org') format('woff'),
        url('../font/diy-regular.svg?24&domain=diy.org#diyregular') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -40,10 +40,8 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 230px 230px;
-
     cursor:url(../img/zoom-ico.png),auto;
 
-    /*background-image: url(http://lorempixel.com/230/230);*/
     visibility: visible;
     -webkit-transform: rotate(-60deg);
        -moz-transform: rotate(-60deg);
@@ -58,8 +56,16 @@
 
 }
 .hexagon-in2:hover {
-    -webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
+    /*-webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);*/
+
+    @include box-shadow(rgba(black, 0.4) 230px 230px 100px inset);
+}
+
+.hexagon-in1 a:hover {
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow:    0px 0px 30px rgba(0, 0, 0, 0.75);
+  box-shadow:         0px 0px 30px rgba(0, 0, 0, 0.75);
 }
 
 .hex-hover{
@@ -96,7 +102,7 @@
     width: 15%;
     max-width: 200px;
     height: 315px;
-    margin: -80px 2% 0 2%;
+    margin: -100px 2% 0 2%;
     display: inline-block;
     z-index: 1;
 }
