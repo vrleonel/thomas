@@ -316,7 +316,7 @@ nav a:hover {
 
 
     .ico{
-      
+
       background-size: auto;
       width: 70px;
       height: 70px;
@@ -536,12 +536,13 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
 
 /* ===============
     Maximal Width
    =============== */
    #content{
+    overflow: auto;
 
    }
    #main{
@@ -588,6 +589,7 @@ nav a:hover {
     position: absolute;
     width: 1px;
 }
+
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
