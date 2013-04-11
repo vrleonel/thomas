@@ -161,9 +161,9 @@
         $("#main").fadeOut(1000, function(){
           $("#main").load(href + " .single-gallery", function(e){
 
-            $("#main").append("<div class='temp'></div>")
-            $(".temp").html(e);
-            console.log($(".temp"));
+            //$("#main").append("<div class='temp'></div>")
+            //$(".temp").html(e);
+            //console.log($(".temp"));
 
             $("#main").fadeIn(1500);
             $("#loading").delay(1000).fadeOut(2000);
