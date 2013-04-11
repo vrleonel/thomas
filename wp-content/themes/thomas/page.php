@@ -25,7 +25,9 @@ get_header(); ?>
 
     <div class="vertical-line"></div>
 
-    <?= get_field("text_home"); ?>
+    <div class="text-home">
+        <?= get_field("text_home"); ?>
+    </div>
 
     <a href="<?= get_field('link_home'); ?>" class="vv">READ MORE</a>
 

@@ -184,8 +184,8 @@
 /**** INICIAR *****/
 
   $(document).ready(function(){
-    //LoadingLinks.init();
-    LoadGallery.init();
+    LoadingLinks.init();
+    //LoadGallery.init();
     Scroll.init();
     Gallery.loading();
     NavLinks.init();

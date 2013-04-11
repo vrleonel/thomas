@@ -78,7 +78,7 @@ h1 {
 
 h3 {
   font-family: "vevey";
-  font-size: 30px;
+  font-size: 29px;
   font-weight: normal;
 }
 
@@ -139,7 +139,7 @@ a:hover {
   top: 50%;
   left: 7%;
   margin-top: -210px;
-  z-index: 10;
+  z-index: 5;
 }
 
 .vertical-bar {
@@ -205,15 +205,19 @@ nav a:visited {
   color: #FFFFFF;
 }
 
-nav a:hover {
+nav a:hover, .social-links li a:hover {
   color: #ff4900;
 }
 
-#navigator ul.social-links li a {
+nav li.current_page_item a {
+  color: #ff4900;
+}
+
+.social-links li a {
   font-size: 13px;
   border-left: 1px solid #686868;
   padding: 15px 10px 15px 20px;
-  color: #686868;
+  color: #FFF;
 }
 
 .left {
@@ -235,6 +239,10 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.page-template-default .logo-v {
+  display: none;
+}
+
 #content.page-home {
   padding: 0;
 }
@@ -263,6 +271,10 @@ nav a:hover {
   margin-left: 50px;
 }
 
+.text-home {
+  font-size: 14px;
+}
+
 .adress {
   font-size: 14px;
 }
@@ -276,6 +288,10 @@ nav a:hover {
 .information {
   margin-top: 70px;
 }
+.information h4 {
+  font-family: 'vevey';
+  font-size: 21px;
+}
 .information div {
   width: 45%;
   float: left;
@@ -286,6 +302,13 @@ nav a:hover {
 .information article {
   text-align: left;
   font-size: 14px;
+  line-height: 22px;
+}
+.information article p {
+  margin-top: 25px;
+}
+.information .article-1 {
+  margin-bottom: 55px;
 }
 .information aside {
   float: right;
@@ -352,6 +375,10 @@ nav a:hover {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.single-post #footer {
+  display: none;
 }
 
 .single-gallery .scroll-up {
@@ -422,6 +449,7 @@ nav a:hover {
 #footer {
   height: 42px;
   clear: both;
+  z-index: 10;
 }
 
 /* ==========================================================================
