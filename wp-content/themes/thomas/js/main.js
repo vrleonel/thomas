@@ -100,6 +100,8 @@
   var Scroll = {
     init: function(){
 
+      //img.next()
+        
       $(".scroll-down").on({
         mouseenter: function(){
           Scroll.down();
@@ -122,12 +124,12 @@
     up: function(){
       $(".scroll-up").animate( {opacity: 0.3}, 100 );
       scroll_max  = $('html, body').height() - $(window).height();
-      $('html, body').animate({ scrollTop: 0 }, Scroll.actual());
+      $('html, body').animate({ scrollTop: 0 }, (Scroll.actual()) , 'easeOutBounce');
     },
 
     down: function(){
       $(".scroll-down").animate( {opacity: 0.3}, 100 );
-      $('html, body').animate({ scrollTop: Scroll.max() }, (Scroll.max()- Scroll.actual()) );
+      $('html, body').animate({ scrollTop: Scroll.max() }, (Scroll.max()- Scroll.actual()), 'easeOutBounce' );
 
     },
 

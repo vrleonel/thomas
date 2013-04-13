@@ -1,3 +1,4 @@
+/* line 13, ../sass/_mixins.scss */
 .pie-element {
   behavior: url("/claro-pe-tcf/static/web/js/PIE.htc");
   position: relative;
@@ -21,6 +22,7 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
+/* line 27, ../sass/common.scss */
 html {
   background: url(../img/bg.jpg) black no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -29,10 +31,12 @@ html {
   background-size: cover;
 }
 
+/* line 35, ../sass/common.scss */
 html, button, input, select, textarea {
   color: #222;
 }
 
+/* line 39, ../sass/common.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
@@ -41,6 +45,7 @@ body {
   line-height: 1.375em;
 }
 
+/* line 49, ../sass/common.scss */
 hr {
   display: block;
   height: 1px;
@@ -50,20 +55,24 @@ hr {
   padding: 0;
 }
 
+/* line 58, ../sass/common.scss */
 img {
   vertical-align: middle;
 }
 
+/* line 62, ../sass/common.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/* line 68, ../sass/common.scss */
 textarea {
   resize: vertical;
 }
 
+/* line 72, ../sass/common.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -71,17 +80,20 @@ textarea {
   padding: 0.2em 0;
 }
 
+/* line 79, ../sass/common.scss */
 h1 {
   font-family: "vevey";
   font-size: 80px;
 }
 
+/* line 84, ../sass/common.scss */
 h3 {
   font-family: "vevey";
   font-size: 30px;
   font-weight: normal;
 }
 
+/* line 89, ../sass/common.scss */
 h4 {
   font-size: 20px;
   margin: 0;
@@ -89,11 +101,13 @@ h4 {
   font-weight: normal;
 }
 
+/* line 96, ../sass/common.scss */
 a, a:active, a:link {
   color: #FFF;
   text-decoration: none;
 }
 
+/* line 100, ../sass/common.scss */
 a:hover {
   color: #ff4900;
 }
@@ -101,11 +115,13 @@ a:hover {
 /* ==============
     Commons
    ============== */
+/* line 107, ../sass/common.scss */
 .vv {
   font-family: 'vevey';
   letter-spacing: 2px;
 }
 
+/* line 112, ../sass/common.scss */
 .ls {
   letter-spacing: 2px;
 }
@@ -113,6 +129,7 @@ a:hover {
 /* ==========================================================================
     Initializr Styles
 ========================================================================== */
+/* line 122, ../sass/common.scss */
 #main {
   text-align: center;
   color: #FFFFFF;
@@ -120,6 +137,7 @@ a:hover {
   padding: 0 0px;
 }
 
+/* line 130, ../sass/common.scss */
 .logo-h {
   background: url(../img/sprite.png) top center no-repeat;
   width: 373px;
@@ -131,16 +149,19 @@ a:hover {
   margin-top: 10%;
 }
 
+/* line 140, ../sass/common.scss */
 .logo-v {
   background: url(../img/sprite.png) -4px -105px no-repeat;
   width: 97px;
   height: 420px;
   position: fixed;
-  top: 25%;
+  top: 50%;
   left: 7%;
+  margin-top: -210px;
   z-index: 10;
 }
 
+/* line 151, ../sass/common.scss */
 .vertical-bar {
   width: 6px;
   background: #FFF;
@@ -153,6 +174,7 @@ a:hover {
 /* ==============
     Main
    ============== */
+/* line 164, ../sass/common.scss */
 #content {
   padding: 45px 0;
   /*width: 100%;
@@ -164,11 +186,13 @@ a:hover {
 /* ==============
     Menu
    ============== */
+/* line 176, ../sass/common.scss */
 nav ul {
   margin: 0;
   padding: 0;
 }
 
+/* line 180, ../sass/common.scss */
 #navigator {
   width: 100%;
   bottom: 0;
@@ -179,6 +203,7 @@ nav ul {
   padding-bottom: 10px;
   z-index: 10;
 }
+/* line 190, ../sass/common.scss */
 #navigator li {
   display: inline-block;
   zoom: 1;
@@ -187,6 +212,7 @@ nav ul {
   letter-spacing: 2px;
 }
 
+/* line 199, ../sass/common.scss */
 nav a {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -200,14 +226,17 @@ nav a {
   /* Opera */
 }
 
+/* line 210, ../sass/common.scss */
 nav a:visited {
   color: #FFFFFF;
 }
 
+/* line 215, ../sass/common.scss */
 nav a:hover {
   color: #ff4900;
 }
 
+/* line 220, ../sass/common.scss */
 #navigator ul.social-links li a {
   font-size: 13px;
   border-left: 1px solid #686868;
@@ -215,11 +244,13 @@ nav a:hover {
   color: #686868;
 }
 
+/* line 229, ../sass/common.scss */
 .left {
   float: left;
   margin-left: 15px;
 }
 
+/* line 234, ../sass/common.scss */
 .right {
   float: right;
 }
@@ -227,6 +258,7 @@ nav a:hover {
 /* ===============
     ALL: IE Fixes
    =============== */
+/* line 243, ../sass/common.scss */
 .ie7 .title {
   padding-top: 20px;
 }
@@ -234,10 +266,12 @@ nav a:hover {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* line 250, ../sass/common.scss */
 #content.page-home {
   padding: 0;
 }
 
+/* line 253, ../sass/common.scss */
 #content.page-gallery {
   min-width: 1000px;
   width: 100%;
@@ -245,26 +279,32 @@ nav a:hover {
   overflow: hidden;
 }
 
+/* line 261, ../sass/common.scss */
 .page-information h4 {
   font-weight: normal;
 }
+/* line 263, ../sass/common.scss */
 .page-information a {
   text-decoration: underline;
 }
 
+/* line 268, ../sass/common.scss */
 .description aside {
   float: left;
   margin-right: 50px;
 }
 
+/* line 273, ../sass/common.scss */
 .description article {
   margin-top: 30px;
   margin-left: 50px;
 }
 
+/* line 278, ../sass/common.scss */
 .adress {
   font-size: 14px;
 }
+/* line 280, ../sass/common.scss */
 .adress a {
   text-decoration: underline;
 }
@@ -272,9 +312,11 @@ nav a:hover {
 /* =====================================
         Information
  ======================================= */
+/* line 288, ../sass/common.scss */
 .information {
   margin-top: 70px;
 }
+/* line 292, ../sass/common.scss */
 .information div {
   width: 45%;
   float: left;
@@ -282,72 +324,75 @@ nav a:hover {
   text-align: left;
   font-size: 14px;
 }
+/* line 300, ../sass/common.scss */
 .information article {
   text-align: left;
   font-size: 14px;
 }
+/* line 305, ../sass/common.scss */
 .information aside {
   float: right;
   width: 45%;
 }
+/* line 309, ../sass/common.scss */
 .information aside h4 {
   text-align: left;
 }
+/* line 312, ../sass/common.scss */
 .information aside h5 {
   font-style: italic;
   font-size: 14px;
 }
+/* line 318, ../sass/common.scss */
 .information aside .ico {
-  background: url(../img/sprite.png) 0px 0px no-repeat;
   background-size: auto;
   width: 70px;
   height: 70px;
   display: inline-block;
   zoom: 1;
   float: left;
-  margin: 11px 22px 0 0;
+  margin: 12px 20px 0 0;
 }
+/* line 328, ../sass/common.scss */
 .information aside p {
   font-size: 12px;
   margin-top: -22px;
   margin-left: 92px;
 }
+/* line 333, ../sass/common.scss */
 .information aside p a {
   font-size: 14px;
   text-decoration: underline;
-}
-.information .item-1 .ico {
-  background-position: 0px -533px;
-}
-.information .item-2 .ico {
-  background-position: 0px -605px;
-}
-.information .item-3 .ico {
-  background-position: 0px -675px;
 }
 
 /* =====================================
     Shop
  ======================================= */
+/* line 346, ../sass/common.scss */
 .page-shop h5 {
   font-size: 20px;
 }
+/* line 350, ../sass/common.scss */
 .page-shop section {
   display: block;
   margin: 0px 0 20px 0;
   font-size: 16px;
 }
+/* line 356, ../sass/common.scss */
 .page-shop aside {
   float: left;
   margin-right: 40px;
   vertical-align: center;
 }
+/* line 362, ../sass/common.scss */
 .page-shop article {
   padding-top: 50px;
 }
+/* line 366, ../sass/common.scss */
 .page-shop a {
   text-decoration: underline;
 }
+/* line 370, ../sass/common.scss */
 .page-shop .small {
   font-size: 0.875em;
   /*14/16*/
@@ -356,6 +401,7 @@ nav a:hover {
 /* =====================================
     Single-gallery
  ======================================= */
+/* line 381, ../sass/common.scss */
 #content.single-gallery {
   min-width: 1000px;
   width: 100%;
@@ -363,6 +409,7 @@ nav a:hover {
   margin: 0;
 }
 
+/* line 389, ../sass/common.scss */
 .single-gallery .scroll-up {
   width: 100%;
   height: 20%;
@@ -374,6 +421,7 @@ nav a:hover {
   opacity: 0;
   position: 20;
 }
+/* line 399, ../sass/common.scss */
 .single-gallery .scroll-down {
   width: 100%;
   height: 25%;
@@ -386,43 +434,57 @@ nav a:hover {
   position: 20;
 }
 
+/* line 411, ../sass/common.scss */
 .single-gallery img {
   width: 100%;
   height: auto;
 }
 
+/* line 416, ../sass/common.scss */
 .nav-links {
   position: absolute;
   top: 50px;
   right: 50px;
   z-index: 50;
 }
+/* line 422, ../sass/common.scss */
 .nav-links span {
   display: inline-block;
   zoom: 1;
   width: 42px;
   height: 52px;
 }
+/* line 429, ../sass/common.scss */
 .nav-links a {
   background: url("../img/gallery-ico.png") top left no-repeat;
   display: block;
   width: 42px;
   height: 52px;
 }
+/* line 437, ../sass/common.scss */
 .nav-links .close a {
   background: url("../img/gallery-ico.png") top center no-repeat;
 }
+/* line 440, ../sass/common.scss */
 .nav-links .next a {
   background: url("../img/gallery-ico.png") top right no-repeat;
 }
+/* line 444, ../sass/common.scss */
 .nav-links .nav-label {
   display: none;
   text-transform: lowercase;
 }
 
+/* line 449, ../sass/common.scss */
+.post-gallery p {
+  margin: 0;
+  padding: 0;
+}
+
 /* ==========================================================================
    Footer
    ========================================================================== */
+/* line 459, ../sass/common.scss */
 #footer {
   height: 42px;
   clear: both;
@@ -435,10 +497,12 @@ nav a:hover {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
+  /* line 477, ../sass/common.scss */
   nav li:first-child a {
     margin-left: 0;
   }
 
+  /* line 481, ../sass/common.scss */
   nav li:last-child a {
     margin-right: 0;
   }
@@ -446,11 +510,13 @@ nav a:hover {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
+  /* line 489, ../sass/common.scss */
   nav ul li {
     display: inline;
     zoom: 1;
   }
 
+  /* line 494, ../sass/common.scss */
   .oldie nav a {
     margin: 0 0.7%;
   }
@@ -459,6 +525,7 @@ nav a:hover {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
+  /* line 506, ../sass/common.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaaaaa;
@@ -469,6 +536,7 @@ nav a:hover {
   /* ============
       WIDE: Menu
      ============ */
+  /* line 516, ../sass/common.scss */
   .title {
     float: left;
   }
@@ -476,11 +544,13 @@ nav a:hover {
   /* ============
       WIDE: Main
      ============ */
+  /* line 528, ../sass/common.scss */
   .main article {
     float: left;
     width: 57%;
   }
 
+  /* line 533, ../sass/common.scss */
   .main aside {
     float: right;
     width: 28%;
@@ -494,6 +564,7 @@ nav a:hover {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+/* line 562, ../sass/common.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -501,6 +572,7 @@ nav a:hover {
   *text-indent: -9999px;
 }
 
+/* line 569, ../sass/common.scss */
 .ir:before {
   content: "";
   display: block;
@@ -508,11 +580,13 @@ nav a:hover {
   height: 150%;
 }
 
+/* line 576, ../sass/common.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
+/* line 581, ../sass/common.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -524,6 +598,7 @@ nav a:hover {
   width: 1px;
 }
 
+/* line 593, ../sass/common.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -534,20 +609,24 @@ nav a:hover {
   width: auto;
 }
 
+/* line 602, ../sass/common.scss */
 .invisible {
   visibility: hidden;
 }
 
+/* line 607, ../sass/common.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
+/* line 612, ../sass/common.scss */
 .clearfix:after {
   clear: both;
 }
 
+/* line 616, ../sass/common.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -555,6 +634,7 @@ nav a:hover {
 /* ==========================
   Loading
   ============================*/
+/* line 626, ../sass/common.scss */
 #loading {
   background: #000;
   position: fixed;
@@ -569,6 +649,7 @@ nav a:hover {
   z-index: 1000;
 }
 
+/* line 639, ../sass/common.scss */
 #sprite {
   background: transparent url(../img/loading-sprite.png) 0 0 no-repeat;
   position: absolute;
@@ -579,6 +660,7 @@ nav a:hover {
   z-index: 2000;
 }
 
+/* line 650, ../sass/common.scss */
 #wrapper {
   display: none;
 }

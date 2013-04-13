@@ -142,9 +142,9 @@ a:hover{
   width: 97px;
   height:420px;
   position: fixed;
-  top:25%;
+  top:50%;
   left:7%;
-
+  margin-top: -210px;
   z-index: 10;
 }
 
@@ -316,14 +316,14 @@ nav a:hover {
 
 
     .ico{
-      background: url(../img/sprite.png) 0px 0px no-repeat;
+      
       background-size: auto;
       width: 70px;
       height: 70px;
       display: inline-block;
       zoom: 1;
       float:left;
-      margin:11px 22px 0 0;
+      margin: 12px 20px 0 0;
     }
     p{
       font-size: 12px;
@@ -336,10 +336,6 @@ nav a:hover {
       }
     }
   }
-
-  .item-1 .ico{ background-position: 0px -533px; }
-  .item-2 .ico{ background-position: 0px -605px; }
-  .item-3 .ico{ background-position: 0px -675px; }
 }
 
 /* =====================================
@@ -449,6 +445,10 @@ nav a:hover {
     display: none;
     text-transform: lowercase;
   }
+ }
+ .post-gallery p{
+  margin: 0;
+  padding: 0;
  }
 
 

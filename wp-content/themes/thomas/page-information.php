@@ -32,7 +32,22 @@ get_header(); ?>
 
 		<aside>
 			<h4 class="vv">more thomas</h4>
-			<?= get_field("aside_articles") ?>
+			<? /*get_field("aside_articles")*/ ?>
+
+
+			<article class="item-1">
+				<span class="ico"><img src="<?= get_field('article_ico_1')?>" alt=""></span>
+				<?= get_field('aside_article_1')?>
+			</article>
+			<article class="item-2">
+				<span class="ico"><img src="<?= get_field('article_ico_2')?>" alt=""></span>
+				<?= get_field('aside_article_2')?>
+			</article>
+			
+			<article class="item-3">
+				<span class="ico"><img src="<?= get_field('article_ico_3')?>" alt=""></span>
+				<?= get_field('aside_article_3')?>
+			</article>
 		</aside>
 	</section>
 
