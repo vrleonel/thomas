@@ -28,10 +28,13 @@ get_header(); ?>
 		$attachments = get_posts($args);
 		$image_url = wp_get_attachment_image_src( $attachments[0]->ID, array(230,230) );
 	}
+
+  $post_title = $post->post_title ." | ". get_bloginfo("name");
+
   ?>
   <div class="hexagon hexagon1">
       <div class="hexagon-in1">
-      	<a id="tattoo-<?=$post->ID?>" data-open="modal" href="<?php the_permalink(); ?>">
+      	<a id="tattoo-<?=$post->ID?>" data-open="modal" data-title="<?= $post_title ?>" href="<?php the_permalink(); ?>">
             <div class="hexagon-in2" style="background-image: url(<?=$image_url[0]?>); ">
             </div>
       	</a>

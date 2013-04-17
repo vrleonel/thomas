@@ -33,11 +33,11 @@
     },
     show_label: function(nav_text){
       $(".nav-label").hide();
-      $(".nav-label").text(nav_text).fadeIn(100);
+      $(".nav-label").text(nav_text).fadeIn(500);
     },
 
     hide_label: function(){
-      $(".nav-label").text('').fadeOut(100);
+      $(".nav-label").text('').fadeOut(250);
     }
   };
 
@@ -54,48 +54,6 @@
 
   };
 
-  var ScrollMouse = {
-    move: window.pageYOffset || document.documentElement.scrollTop,
-    init: function(){
-
-      $(".scroll-down").on({
-        mouseover: function(){
-          ScrollMouse.down();
-        },
-        click: function() {
-         ScrollMouse.down();
-        }
-      });
-
-      $(".scroll-up").on({
-        mouseover: function(){
-          ScrollMouse.up();
-        },
-        click: function() {
-          ScrollMouse.up();
-        }
-      });
-
-      ScrollMouse.scrolling();
-    },
-
-    up: function(){
-      ScrollMouse.move = ((ScrollMouse.move - 500) < 0) ? 0 : ScrollMouse.move - 500 ;
-      $('html, body').animate({ scrollTop: ScrollMouse.move }, 500);
-    },
-
-    down: function(){
-      scroll_max  = $('html, body').height() - $(window).height();
-      ScrollMouse.move = ((ScrollMouse.move + 500) > scroll_max) ? scroll_max : ScrollMouse.move + 500;
-      $('html, body').animate({ scrollTop: ScrollMouse.move }, 500);
-    },
-
-    scrolling: function(){
-      $(document).scroll(function(){
-        ScrollMouse.move = window.pageYOffset || document.documentElement.scrollTop;
-      });
-    }
-  };
 
   var Scroll = {
     init: function(){
@@ -122,19 +80,19 @@
     },
 
     up: function(){
-      $(".scroll-up").animate( {opacity: 0.3}, 100 );
+      $(".scroll-up").animate( {opacity: 0.3}, 250 );
       scroll_max  = $('html, body').height() - $(window).height();
-      $('html, body').animate({ scrollTop: 0 }, (Scroll.actual()) , 'easeOutBounce');
+      $('html, body').animate({ scrollTop: 0 }, (Scroll.actual()));
     },
 
     down: function(){
-      $(".scroll-down").animate( {opacity: 0.3}, 100 );
-      $('html, body').animate({ scrollTop: Scroll.max() }, (Scroll.max()- Scroll.actual()), 'easeOutBounce' );
+      $(".scroll-down").animate( {opacity: 0.3}, 250 );
+      $('html, body').animate({ scrollTop: Scroll.max() }, (Scroll.max()- Scroll.actual()));
 
     },
 
     stop: function(){
-      $(".scroll-down, .scroll-up").animate( {opacity: 0}, 100 );
+      $(".scroll-down, .scroll-up").animate( {opacity: 0}, 250 );
       $('html, body').stop();
     },
 
@@ -152,42 +110,53 @@
   var LoadGallery = {
     init: function(){
       LoadGallery.dataOpen();
-
       $("a[data-open='modal']").click(function(e){
+
         e.preventDefault();
-
         href = $(this).attr('href');
-        
-        LoadGallery.status(href);
-        
+        console.log($(this).attr('data-title'));
+        LoadGallery.status(href, $(this).attr('data-title'));
 
-        $("#loading").fadeIn(300);
-  
-        $("#main").fadeOut(1000, function(){
-        
-          $("#main").load(href + " .single-gallery", function(e){
+        $("#loading").fadeIn(500, function(){
 
-            $("#main").fadeIn(1500);
-            $("#loading").delay(1000).fadeOut(1000);
+          LoadGallery.hideFooter();
 
-            LoadGallery.init();
-            NavLinks.init().delay(1000);
-          }).delay(1000);
+          $("#main").fadeOut(1000, function(){
+
+            $("#main").load(href + " .single-gallery", function(){
+
+              LoadGallery.showPage();
+              LoadGallery.init();
+              NavLinks.init();
+              Scroll.init();
+
+
+            }).delay(1000);
+          });
         });
-
       });
     },
-    
-    status: function(href){
+
+    status: function(href, title){
       if(href!=window.location){
         window.history.pushState({path:href},'',href);
       }
+      document.title = title;
 
+    },
+
+    showPage: function(){
+      $("#main").fadeIn(1500);
+      $("#loading").delay(1000).fadeOut(1000);
     },
 
     dataOpen: function(){
       $(".nav-links .prev a").attr("data-open", "modal");
       $(".nav-links .next a").attr("data-open", "modal");
+    },
+
+    hideFooter: function(){
+      $("#footer").fadeOut("250");
     }
 
 

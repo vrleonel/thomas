@@ -17,5 +17,18 @@ function posts_link_attributes_2() {
     return 'class="next-post"';
 }
 
+/**********************************************
+* Cria uma url de acordo com o root           *
+***********************************************/
+function make_href_root_relative($input) {
+    return preg_replace('!http(s)?://' . $_SERVER['SERVER_NAME'] . '/!', '/', $input);
+}
 
+/*
+function root_relative_permalinks($input) {
+    return make_href_root_relative($input);
+}
+add_filter( 'the_permalink', 'root_relative_permalinks' );
+
+*/
 ?>
