@@ -44,7 +44,7 @@ $social_menu_args = array(
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.easing.compatibility.js"></script>
 <script src="<? bloginfo('template_directory');?>/js/plugins.js"></script>
-<script src="<? bloginfo('template_directory');?>/js/main.js?3"></script>
+<script src="<? bloginfo('template_directory');?>/js/main.js?4"></script>
 
 <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

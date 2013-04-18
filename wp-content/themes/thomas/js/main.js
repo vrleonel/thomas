@@ -171,7 +171,7 @@
             $("#loading").delay(1000).fadeOut(1000);
 
             LoadGallery.init();
-            //debugger;
+            NavLinks.init().delay(1000);
           }).delay(1000);
         });
 
@@ -186,7 +186,8 @@
     },
 
     dataOpen: function(){
-      $(".nav-links a").attr("data-open", "modal");
+      $(".nav-links .prev a").attr("data-open", "modal");
+      $(".nav-links .next a").attr("data-open", "modal");
     }
 
 
