@@ -225,7 +225,7 @@ nav li.current_page_item a{
   font-size: 13px;
   border-left: 1px solid #686868;
   padding: 15px 10px 15px 20px;
-  color:#FFF;
+  color:#686868;
 }
 
 
@@ -664,6 +664,7 @@ nav li.current_page_item a{
   height: 100%;
   width: 100%;
   z-index: 1000;
+  display: none;
 }
 #sprite{
 

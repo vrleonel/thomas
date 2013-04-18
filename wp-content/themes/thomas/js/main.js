@@ -9,11 +9,11 @@
     },
 
     fadein_unload: function(e){
-      $("#loading").show().fadeIn(500);
+      $("#loading").show().fadeIn(1000);
     },
 
     fade_page: function(){
-      $("#wrapper").hide(0).delay(0).fadeIn(1000);
+      $("#wrapper").hide(0).fadeIn(1000);
       $("#loading").delay(2000).fadeOut(1000, function(element) {
 
       });
@@ -151,31 +151,47 @@
 /** Loading via AJAX **/
   var LoadGallery = {
     init: function(){
-      $("a[rel='modal']").click(function(e){
+      LoadGallery.dataOpen();
+
+      $("a[data-open='modal']").click(function(e){
         e.preventDefault();
 
         href = $(this).attr('href');
+        
+        LoadGallery.status(href);
+        
 
-        Gallery.fadein_unload();
-        $("#loading").css("opacity", ".80");
+        $("#loading").fadeIn(300);
+  
         $("#main").fadeOut(1000, function(){
+        
           $("#main").load(href + " .single-gallery", function(e){
 
-            //$("#main").append("<div class='temp'></div>")
-            //$(".temp").html(e);
-            //console.log($(".temp"));
-
             $("#main").fadeIn(1500);
-            $("#loading").delay(1000).fadeOut(2000);
+            $("#loading").delay(1000).fadeOut(1000);
 
+            LoadGallery.init();
             //debugger;
           }).delay(1000);
         });
 
-
-
       });
+    },
+    
+    status: function(href){
+      if(href!=window.location){
+        window.history.pushState({path:href},'',href);
+      }
+
+    },
+
+    dataOpen: function(){
+      $(".nav-links a").attr("data-open", "modal");
     }
+
+
+
+
   };
 
 
@@ -184,15 +200,15 @@
 /**** INICIAR *****/
 
   $(document).ready(function(){
-    LoadingLinks.init();
-    //LoadGallery.init();
+    //LoadingLinks.init();
+    LoadGallery.init();
     Scroll.init();
     Gallery.loading();
     NavLinks.init();
   });
 
   $(window).unload(function(){
-     Gallery.fadein_unload(this);
+     //Gallery.fadein_unload(this);
   });
 
   $(window).load(function(){

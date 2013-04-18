@@ -25,7 +25,9 @@ $social_menu_args = array(
 );
 
 ?>
-  <a href="<?= get_home_url(); ?>" class="logo-v">&nbsp;</a>
+  <? if(!is_home()){ ?>
+    <a href="<?= get_home_url(); ?>" class="logo-v">&nbsp;</a>
+  <? } ?>
   </div><!-- #main -->
   <div id="footer">
     <nav id="navigator">

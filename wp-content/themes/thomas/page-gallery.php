@@ -31,7 +31,7 @@ get_header(); ?>
   ?>
   <div class="hexagon hexagon1">
       <div class="hexagon-in1">
-      	<a id="tattoo-<?=$post->ID?>" rel="modal" href="<?php the_permalink(); ?>">
+      	<a id="tattoo-<?=$post->ID?>" data-open="modal" href="<?php the_permalink(); ?>">
             <div class="hexagon-in2" style="background-image: url(<?=$image_url[0]?>); ">
             </div>
       	</a>
