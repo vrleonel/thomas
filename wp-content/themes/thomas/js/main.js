@@ -109,8 +109,9 @@
 /** Loading via AJAX **/
   var LoadGallery = {
     init: function(){
-      LoadGallery.dataOpen();
-      $("a[data-open='modal']").click(function(e){
+      _this = this;
+      
+      $("a[data-open='modal']").on("click", function(e){
 
         e.preventDefault();
         href = $(this).attr('href');
@@ -123,7 +124,7 @@
 
           $("#main").fadeOut(1000, function(){
 
-            $("#main").load(href + " .single-gallery", function(){
+            $("#main").load(href + " .single-gallery, .logo-v", function(){
 
               LoadGallery.showPage();
               LoadGallery.init();
@@ -133,6 +134,28 @@
 
             }).delay(1000);
           });
+        });
+      });
+
+      $("a[data-open='close']").on("click", function(e){
+        e.preventDefault();
+        href = $(this).attr('href');
+        _this.status(href, $(this).attr('data-title'));
+        
+        $("#loading").fadeIn(500, function(){
+
+          _this.showFooter();
+
+          $("#main").fadeOut(1000, function(){
+
+            $("#main").load(href + " .page-gallery, .logo-v", function(){
+
+              LoadGallery.showPage();
+              LoadGallery.init();            
+
+            }).delay(1000);
+          });
+
         });
       });
     },
@@ -157,7 +180,11 @@
 
     hideFooter: function(){
       $("#footer").fadeOut("250");
-    }
+    },
+
+    showFooter: function(){
+      $("#footer").fadeIn("250");
+    },
 
 
 

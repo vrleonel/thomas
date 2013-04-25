@@ -583,7 +583,9 @@ nav li.current_page_item a {
   Loading
   ============================*/
 #loading {
-  background: transparent;
+  background: #000;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
   position: fixed;
   top: 0;
   left: 0;

@@ -655,7 +655,8 @@ nav li.current_page_item a{
   ============================*/
 
 #loading {
-  background: transparent;
+  background: #000;
+  @include opacity(0.75);
   position: fixed;
   top: 0;
   left: 0;
