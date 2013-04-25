@@ -111,7 +111,7 @@
   var LoadGallery = {
     init: function(){
       _this = this;
-      
+
       $("a[data-open='modal']").on("click", function(e){
 
         e.preventDefault();
@@ -133,7 +133,7 @@
               Scroll.init();
 
 
-            }).delay(1000);
+            }).delay(0);
           });
         });
       });
@@ -142,7 +142,7 @@
         e.preventDefault();
         href = $(this).attr('href');
         _this.status(href, $(this).attr('data-title'));
-        
+
         $("#loading").fadeIn(500, function(){
 
           _this.showFooter();
@@ -152,9 +152,9 @@
             $("#main").load(href + " .page-gallery, .logo-v", function(){
 
               LoadGallery.showPage();
-              LoadGallery.init();            
+              LoadGallery.init();
 
-            }).delay(1000);
+            }).delay(0);
           });
 
         });

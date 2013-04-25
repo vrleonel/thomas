@@ -25,10 +25,11 @@ $social_menu_args = array(
 );
 
 ?>
+
+  </div><!-- #main -->
   <? if(!is_home()){ ?>
     <a href="<?= get_home_url(); ?>" class="logo-v">&nbsp;</a>
   <? } ?>
-  </div><!-- #main -->
   <div id="footer">
     <nav id="navigator">
       <? wp_nav_menu( $main_menu_args ); ?>
