@@ -420,17 +420,19 @@ nav li.current_page_item a{
     position: fixed;
     top: 0;
     left: 0;
-    background: #333;
-    @include opacity(0);
+    background: transparent;
+    @include opacity(1);
     position: 20;
+
     span{
       display: block;
-      margin: 0 auto;
       width: 52px;
       height: 42px;
       background: url("../img/icos.png") -50px 0 no-repeat;
-      position: relative;
-      top: 25%;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -26px;
     }
   }
   .scroll-down{
@@ -439,17 +441,20 @@ nav li.current_page_item a{
     position: fixed;
     bottom: 0;
     left:0;
-    background: #333;
-    @include opacity(0);
+    background: transparent;
+    @include opacity(1);
     position: 20;
+    text-align: center;
     span{
       display: block;
-      margin: 0 auto;
+
       width: 52px;
       height: 42px;
       background: url("../img/icos.png") 0 0 no-repeat;
-      position: relative;
-      top: 25%;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin-left: -26px;
     }
   }
  }
@@ -480,16 +485,24 @@ nav li.current_page_item a{
     height: 52px;
     margin: 0 auto;
 
+
+
   }
-  div { 
-    display: none; 
+  div {
+    color: transparent;
     margin-top: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
 
   }
   .close:hover div, .next:hover div, .prev:hover div {
-    display: block;
+    color: white;
   }
-  
+
   .close a {
     background: url("../img/icos.png") -242px 0px no-repeat;
 

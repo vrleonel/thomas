@@ -387,19 +387,20 @@ nav li.current_page_item a {
   position: fixed;
   top: 0;
   left: 0;
-  background: #333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
   position: 20;
 }
 .single-gallery .scroll-up span {
   display: block;
-  margin: 0 auto;
   width: 52px;
   height: 42px;
   background: url("../img/icos.png") -50px 0 no-repeat;
-  position: relative;
-  top: 25%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -26px;
 }
 .single-gallery .scroll-down {
   width: 100%;
@@ -407,19 +408,21 @@ nav li.current_page_item a {
   position: fixed;
   bottom: 0;
   left: 0;
-  background: #333;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
   position: 20;
+  text-align: center;
 }
 .single-gallery .scroll-down span {
   display: block;
-  margin: 0 auto;
   width: 52px;
   height: 42px;
   background: url("../img/icos.png") 0 0 no-repeat;
-  position: relative;
-  top: 25%;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -26px;
 }
 
 .single-gallery img {
@@ -448,11 +451,16 @@ nav li.current_page_item a {
   margin: 0 auto;
 }
 .nav-links div {
-  display: none;
+  color: transparent;
   margin-top: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .nav-links .close:hover div, .nav-links .next:hover div, .nav-links .prev:hover div {
-  display: block;
+  color: white;
 }
 .nav-links .close a {
   background: url("../img/icos.png") -242px 0px no-repeat;

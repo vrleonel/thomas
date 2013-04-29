@@ -81,19 +81,19 @@
     },
 
     up: function(){
-      $(".scroll-up").animate( {opacity: 0.3}, 250 );
+      //$(".scroll-up").animate( {opacity: 0.3}, 250 );
       scroll_max  = $('html, body').height() - $(window).height();
       $('html, body').animate({ scrollTop: 0 }, (Scroll.actual() * Scroll.time));
     },
 
     down: function(){
-      $(".scroll-down").animate( {opacity: 0.3}, 250 );
+      //$(".scroll-down").animate( {opacity: 0.3}, 250 );
       $('html, body').animate({ scrollTop: Scroll.max() }, (   (Scroll.max()- Scroll.actual()) * Scroll.time ));
 
     },
 
     stop: function(){
-      $(".scroll-down, .scroll-up").animate( {opacity: 0}, 250 );
+      //$(".scroll-down, .scroll-up").animate( {opacity: 0}, 250 );
       $('html, body').stop();
     },
 
