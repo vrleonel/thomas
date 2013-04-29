@@ -55,10 +55,13 @@
 
     @include box-shadow(rgba(black, 0.4) 230px 230px 100px inset);
 
+    @include box-shadow(rgba(black, 0.4) 230px 230px 100px inset);
+
 
 }
 .hexagon-in2:hover {
-  @include box-shadow(rgba(black, 0) 0 0 0 inset);
+  @include box-shadow(rgba(black, 0) 0 0 100px inset);
+
 }
 
 .hexagon-in1 a:hover {
