@@ -128,7 +128,7 @@
               if(statusTxt=="success"){
                 _this.showPage();
                 _this.init();
-                NavLinks.init();
+                //NavLinks.init();
                 Scroll.init();
               }
             }).delay(1);
@@ -200,7 +200,7 @@
     LoadGallery.init();
     Scroll.init();
     Gallery.loading();
-    NavLinks.init();
+    //NavLinks.init();
   });
 
   $(window).unload(function(){

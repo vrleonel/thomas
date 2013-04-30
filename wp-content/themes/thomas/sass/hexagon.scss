@@ -48,24 +48,21 @@
          -o-transform: rotate(-60deg);
             transform: rotate(-60deg);
 
-    transition: all .6s;
-    -moz-transition: all .6s; /* Firefox 4 */
-    -webkit-transition: all .6s; /* Safari and Chrome */
-    -o-transition: all .6s; /* Opera */
+    transition: all .5s;
+    -moz-transition: all .5s; /* Firefox 4 */
+    -webkit-transition: all .5s; /* Safari and Chrome */
+    -o-transition: all .5s; /* Opera */
+
+    @include box-shadow(rgba(black, 0.4) 230px 230px 100px inset);
 
 
 }
 .hexagon-in2:hover {
-    /*-webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);*/
-    /*background: #000;*/
-    @include box-shadow(rgba(black, 0.4) 230px 230px 100px inset);
+  @include box-shadow(rgba(black, 0) 0 0 0 inset);
 }
 
 .hexagon-in1 a:hover {
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow:    0px 0px 30px rgba(0, 0, 0, 0.75);
-  box-shadow:         0px 0px 30px rgba(0, 0, 0, 0.75);
+
 }
 
 .hex-hover{

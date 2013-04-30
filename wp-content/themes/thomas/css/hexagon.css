@@ -48,28 +48,22 @@
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
   transform: rotate(-60deg);
-  transition: all 0.6s;
-  -moz-transition: all 0.6s;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
   /* Firefox 4 */
-  -webkit-transition: all 0.6s;
+  -webkit-transition: all 0.5s;
   /* Safari and Chrome */
-  -o-transition: all 0.6s;
+  -o-transition: all 0.5s;
   /* Opera */
-}
-
-.hexagon-in2:hover {
-  /*-webkit-box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 230px 230px 230px 100px rgba(0, 0, 0, 0.5);*/
-  /*background: #000;*/
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 230px 230px 100px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 230px 230px 100px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 230px 230px 100px inset;
 }
 
-.hexagon-in1 a:hover {
-  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.75);
+.hexagon-in2:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0) 0 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0) 0 0 0 inset;
 }
 
 .hex-hover {
