@@ -96,6 +96,12 @@ h4{
 a, a:active, a:link {
   color: #FFF;
   text-decoration: none;
+
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 a:hover{
   color: #ff4900;
@@ -196,7 +202,7 @@ nav ul {
   }
 }
 
-nav a {
+nav a{
   color: #FFFFFF;
   text-transform: uppercase;
   padding:10px 15px;
