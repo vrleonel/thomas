@@ -58,8 +58,44 @@
 
 </head>
 
+<? /* Menu */
+$main_menu_args = array(
+  'theme_location'  => 'main-menu',
+  'container'       => 'div',
+  'menu_id'         => 'main-menu',
+  'menu_class'      => 'left',
+  'echo'            => true,
+  'fallback_cb'     => 'wp_page_menu',
+  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+  'depth'           => 0,
+  'walker'          => ''
+);
+
+$social_menu_args = array(
+  'theme_location'  => 'social-menu',
+  'container'       => 'div',
+  'menu_id'         => 'social-menu',
+  'menu_class'      => 'right social-links',
+  'echo'            => true,
+  'fallback_cb'     => 'wp_page_menu',
+  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+  'depth'           => 0,
+  'walker'          => ''
+);
+?>
+
+
+
+
+
 <body <?php body_class(); ?>>
 <div id="loading"><div id="sprite"></div></div>
 <div id="wrapper" class="hfeed">
+  <div id="footer">
+    <nav id="navigator">
+      <? wp_nav_menu( $main_menu_args ); ?>
+      <? wp_nav_menu( $social_menu_args ); ?>
+    </nav>
+  </div>
   <div id="main">
 

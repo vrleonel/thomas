@@ -1,41 +1,9 @@
-<?php
-/* Menu */
-$main_menu_args = array(
-  'theme_location'  => 'main-menu',
-  'container'       => 'div',
-  'menu_id'         => 'main-menu',
-  'menu_class'      => 'left',
-  'echo'            => true,
-  'fallback_cb'     => 'wp_page_menu',
-  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-  'depth'           => 0,
-  'walker'          => ''
-);
 
-$social_menu_args = array(
-  'theme_location'  => 'social-menu',
-  'container'       => 'div',
-  'menu_id'         => 'social-menu',
-  'menu_class'      => 'right social-links',
-  'echo'            => true,
-  'fallback_cb'     => 'wp_page_menu',
-  'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-  'depth'           => 0,
-  'walker'          => ''
-);
-
-?>
 
   </div><!-- #main -->
   <? if(!is_home()){ ?>
     <a href="<?= get_home_url(); ?>" class="logo-v">&nbsp;</a>
   <? } ?>
-  <div id="footer">
-    <nav id="navigator">
-      <? wp_nav_menu( $main_menu_args ); ?>
-      <? wp_nav_menu( $social_menu_args ); ?>
-    </nav>
-  </div>
 </div><!-- #wrapper -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
