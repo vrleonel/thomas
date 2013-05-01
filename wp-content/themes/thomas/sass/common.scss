@@ -277,17 +277,18 @@ nav li.current_page_item a{
 }
 
 
-.description {}
-.description aside{
-  float:left;
-  margin-right: 50px;
-}
+.description {
+  aside{
+    float:left;
+    margin-right: 50px;
+  }
+  
+  article{
+    margin-top: 30px;
+    margin-left: 50px
+  }
 
-.description article{
-  margin-top: 30px;
-  margin-left: 50px
 }
-
 .text-home{
   font-size: 14px;
 }
@@ -570,66 +571,6 @@ nav li.current_page_item a{
         margin: 0 0.7%;
     }
 }
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-   #content{
-    overflow: auto;
-
-   }
-   #main{
-
-   }
-
-    .wrapper {
-
-    }
-}
-
-
 
 /* ==========================================================================
    Helper classes

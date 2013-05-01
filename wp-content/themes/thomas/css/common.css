@@ -270,7 +270,6 @@ nav li.current_page_item a {
   float: left;
   margin-right: 50px;
 }
-
 .description article {
   margin-top: 30px;
   margin-left: 50px;
@@ -513,45 +512,6 @@ nav li.current_page_item a {
 
   .oldie nav a {
     margin: 0 0.7%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* ====================
-      WIDE: CSS3 Effects
-     ==================== */
-  .header-container,
-  .main aside {
-    -webkit-box-shadow: 0 5px 10px #aaaaaa;
-    -moz-box-shadow: 0 5px 10px #aaaaaa;
-    box-shadow: 0 5px 10px #aaaaaa;
-  }
-
-  /* ============
-      WIDE: Menu
-     ============ */
-  .title {
-    float: left;
-  }
-
-  /* ============
-      WIDE: Main
-     ============ */
-  .main article {
-    float: left;
-    width: 57%;
-  }
-
-  .main aside {
-    float: right;
-    width: 28%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  /* ===============
-      Maximal Width
-     =============== */
-  #content {
-    overflow: auto;
   }
 }
 /* ==========================================================================
