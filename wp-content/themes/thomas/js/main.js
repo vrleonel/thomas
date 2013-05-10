@@ -184,9 +184,18 @@
     showFooter: function(){
       $("#footer").fadeIn("250");
     },
+  };
 
+  var Hexagon = {
+    init: function(){
+      aspect_ratio = 1.75;
+      $my_div = $(".hexagon1");
+      $my_div.height( $my_div.width() * aspect_ratio );
 
-
+      jQuery(window).resize(function() {
+        $my_div.height( $my_div.width() * aspect_ratio );
+      });
+    },
 
   };
 
@@ -201,6 +210,7 @@
     Scroll.init();
     Gallery.loading();
     //NavLinks.init();
+
   });
 
   $(window).unload(function(){
@@ -209,6 +219,8 @@
 
   $(window).load(function(){
     Gallery.fade_page();
+    Hexagon.init();
+
   });
 
 
