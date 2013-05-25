@@ -392,8 +392,8 @@ nav li.current_page_item a {
   top: 0;
   left: 0;
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   position: 20;
 }
 .single-gallery .scroll-up span {
@@ -413,8 +413,8 @@ nav li.current_page_item a {
   bottom: 0;
   left: 0;
   background: transparent;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   position: 20;
   text-align: center;
 }
@@ -580,8 +580,8 @@ nav li.current_page_item a {
   ============================*/
 #loading {
   background: #000;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
