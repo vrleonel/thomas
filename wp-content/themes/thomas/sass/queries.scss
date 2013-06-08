@@ -1,77 +1,78 @@
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 770px) {
+$phone: "only screen and (max-width : 320px)";
+@media #{$phone}{
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-#content{
-  padding: 45px;
-  max-width: 1000px;
-  width: 100%;
-  /*width: 1000px;*/
-  margin: 0 auto;
-}
-
-#content.single-gallery{
-  min-width: 100%;
-  overflow: hidden;
-}
-
-
-.description {
-  float:left;
-  margin-right: 50px;
-
-  img{
-    max-width: 405px;
+  /* ====================
+      WIDE: CSS3 Effects
+     ==================== */
+  #content{
+    padding: 45px;
+    max-width: 1000px;
     width: 100%;
-    height: auto;
-  }
-  
-  article{
-    margin-top: 50px;
-    margin-left: 50px;
-
-    display: block;
-    clear: both;
+    /*width: 1000px;*/
+    margin: 0 auto;
   }
 
-}
-
-/* ============
-    WIDE: Information
-   ============ */
-
-.information{
-  margin-top: 70px;
-  div{
-    width: auto;
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    font-size: 14px;
+  #content.single-gallery{
+    min-width: 100%;
+    overflow: hidden;
   }
 
-  article{
-    text-align: left;
-    font-size: 14px;
-    line-height: 22px;
+
+  .description {
+    float:left;
+    margin-right: 50px;
+
+    img{
+      max-width: 405px;
+      width: 100%;
+      height: auto;
+    }
+    
+    article{
+      margin-top: 50px;
+      margin-left: 50px;
+
+      display: block;
+      clear: both;
+    }
 
   }
-  .article-1{
-    margin-top: 50px;
-    margin-bottom: 55px;
-  }
 
-  aside{
-    width: auto;
-    margin-bottom: 50px;
-    display: block;
-    clear: both;
+  /* ============
+      WIDE: Information
+     ============ */
+
+  .information{
+    margin-top: 70px;
+    div{
+      width: auto;
+      float: left;
+      margin-left: 5%;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    article{
+      text-align: left;
+      font-size: 14px;
+      line-height: 22px;
+
+    }
+    .article-1{
+      margin-top: 50px;
+      margin-bottom: 55px;
+    }
+
+    aside{
+      width: auto;
+      margin-bottom: 50px;
+      display: block;
+      clear: both;
+    }
   }
-}
 
 
 /* ============
