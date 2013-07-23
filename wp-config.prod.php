@@ -17,16 +17,16 @@
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
 
-define('DB_NAME', 'ideiaemeia2');
+define('DB_NAME', 'thomashoopertattooingcom_wordpress');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'ideiaemeia2');
+define('DB_USER', 'hooperserver');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'megazord');
+define('DB_PASSWORD', 'wpThomasBlog');
 
 /** nome do host do MySQL */
-define('DB_HOST', '200.234.214.80');
+define('DB_HOST', 'mysql.thomashoopertattooing.com/');
 
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
